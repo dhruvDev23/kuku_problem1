@@ -1,0 +1,59 @@
+{
+  "notes": "Hand-picked BEFORE inspecting model output. Selected by reading 6 varied episodes (1, 4, 15, 25, 34, 42) and choosing the single strongest promo-worthy moment from each based on hook power, cliffhanger strength, and standalone clarity.",
+  "promos": [
+    {
+      "episode": 1,
+      "start_s": 33.8,
+      "end_s": 60.0,
+      "scene": 1,
+      "hook_quote": "Gerald?",
+      "cliffhanger_quote": "You let me believe I was walking toward my husband!",
+      "why": "Opens on a bride whispering her groom's name in tearful shock at the altar, escalates through the sister's cruel 'Because he is marrying me' reveal, and ends on Juliana's devastating accusation — universal betrayal that demands to know what happens next."
+    },
+    {
+      "episode": 4,
+      "start_s": 10.6,
+      "end_s": 65.5,
+      "scene": 1,
+      "hook_quote": "You have finally found a man as worthless as everyone thinks you are.",
+      "cliffhanger_quote": "It is a vow.",
+      "why": "Opens with Clarissa's vicious public insult, escalates through the mysterious scarred stranger's unexpectedly tender defense of Juliana, and lands on his intense 'It is a vow' — leaving the audience desperate to know if she'll accept."
+    },
+    {
+      "episode": 15,
+      "start_s": 3.6,
+      "end_s": 55.7,
+      "scene": 1,
+      "hook_quote": "The thug brutally smashes his club down into a wooden planter box, shattering the frame.",
+      "cliffhanger_quote": "My mother's plants...",
+      "why": "Opens with a visceral violent smash that stops scrollers cold, builds through Juliana desperately defending her late mother's garden with bleeding bandaged hands, and ends on her broken sob — you need to know if Alexander arrives in time."
+    },
+    {
+      "episode": 25,
+      "start_s": 24.0,
+      "end_s": 81.8,
+      "scene": 1,
+      "hook_quote": "Who did this?",
+      "cliffhanger_quote": "Poison.",
+      "why": "Opens with Alexander's seething 'Who did this?' over a fresh whip wound, builds through Juliana's reluctant confession about infiltrating a manor, and ends on the single chilling word 'Poison' — a bombshell cliffhanger that demands answers."
+    },
+    {
+      "episode": 34,
+      "start_s": 1.2,
+      "end_s": 43.5,
+      "scene": 1,
+      "hook_quote": "Lady Juliana Ashcroft, you are accused of witchcraft, unlawful healing, and poisoning.",
+      "cliffhanger_quote": "Then let it be.",
+      "why": "Opens with a booming courtroom witchcraft accusation, builds through coerced false testimony and the judge's ultimatum to renounce, and ends on Juliana's fearless defiance — leaving her fate in total suspense."
+    },
+    {
+      "episode": 42,
+      "start_s": 11.2,
+      "end_s": 39.8,
+      "scene": 1,
+      "hook_quote": "Who are you?",
+      "cliffhanger_quote": "And yet, here I stand. That is the lie you built your life upon.",
+      "why": "Opens with a terrified villain's 'Who are you?' as a scarred nobleman emerges from cathedral smoke in ducal regalia, guards defy arrest orders, and climaxes with Alexander revealing the usurper's life is built on a lie — power struggle left unresolved."
+    }
+  ]
+}

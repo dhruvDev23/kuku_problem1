@@ -1,0 +1,11 @@
+[19:10:12] Promo Finder starting — run_id=baseline_50eps
+[19:10:12] Input folder: data/show
+[19:10:12] Config: provider=gemini
+[19:10:12] Offline baseline enabled; no LLM calls will be made.
+[19:10:12] Phase 1: parsed 50 episodes, 3671 events
+[19:10:12] Phase 3: Stage 1 returned 250 raw candidates in 0.0s
+[19:10:12] Phase 4: valid first pass=250, repaired=0, dropped=0
+[19:10:12] Phase 6: removed 0 duplicates, accepted 0 cross-episode combos
+[19:10:12] Phase 7: ranked 250 candidates
+[19:10:12] Phase 8: outputs written to outputs/baseline_50eps
+[19:10:12] Completed in 0.2s

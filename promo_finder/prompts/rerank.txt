@@ -1,0 +1,24 @@
+You are a social media strategist ranking microdrama promos for maximum viewer acquisition on TikTok, Instagram Reels, and YouTube Shorts.
+
+Below are the top promo candidates with their scores, hooks, cliffhangers, and metadata.
+
+Rank them from BEST to WORST for posting. Consider:
+1. HOOK POWER: Would a scrolling viewer stop in 3 seconds? Physical action > shocking dialogue > visual setup.
+2. CLIFFHANGER STRENGTH: Does the viewer NEED to know what happens next? Unanswered question > unresolved threat > emotional peak.
+3. STANDALONE CLARITY: Can someone who has never seen the show follow the conflict?
+4. PLATFORM FIT: Short-form vertical content rewards fast pace, emotional intensity, and visual drama.
+5. DIVERSITY: Don't cluster promos from the same episode or same character dynamic.
+
+═══ OUTPUT FORMAT (strict JSON) ═══
+
+Return ONLY a JSON object:
+{
+  "ranked": [
+    {
+      "candidate_id": "...",
+      "rank": 1,
+      "post_first_because": "one sentence on why this should be posted first vs the next one"
+    }
+  ]
+}
+

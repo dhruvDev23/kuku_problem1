@@ -1,0 +1,61 @@
+# ──────────────────────────────────────────────────────────
+# Promo Finder Configuration
+# ──────────────────────────────────────────────────────────
+
+# LLM Provider & Models
+provider: gemini                    # gemini | openai_compatible
+gemini:
+  api_key_env: GEMINI_API_KEY       # env var name
+  # Models — free tier Gemini
+  stage1_model: gemini-2.5-flash
+  stage2_model: gemini-2.5-flash
+  rerank_model: gemini-2.5-flash
+
+openai_compatible:
+  api_key_env: OPENAI_API_KEY
+  base_url: https://api.openai.com/v1
+  stage1_model: gpt-4o-mini
+  stage2_model: gpt-4o
+  rerank_model: gpt-4o
+
+# LLM Settings
+temperature: 0.2
+max_retries: 3
+requests_per_minute: 15           # free-tier rate limit
+cache_dir: cache
+
+# Promo constraints
+promo:
+  min_duration_s: 20
+  max_duration_s: 60
+  duration_tolerance_s: 3          # borderline flag zone
+  max_segments: 3
+  hook_window_s: 3                 # first N seconds must have the hook
+  candidates_per_episode: 5        # Stage 1 target
+
+# Scoring weights (all 0-1, should sum to ~1)
+scoring:
+  w_hook: 0.25
+  w_cliffhanger: 0.30
+  w_standalone: 0.20
+  w_pace: 0.10
+  w_heuristics: 0.15
+  # Penalties (subtracted from score)
+  penalty_spoiler_high: 0.3
+  penalty_spoiler_med: 0.15
+  penalty_needs_context: 0.2
+  penalty_visual_risk_high: 0.15
+  penalty_visual_risk_med: 0.05
+  penalty_borderline_duration: 0.05
+
+# Ranking
+ranking:
+  max_per_episode_in_top10: 2
+  rerank_top_n: 20                # how many to send to comparative rerank
+  rerank_blend_weight: 0.3        # weight of rerank position vs formula score
+  top_n_rationale: 10             # generate posting rationales for top N
+
+# Diversity (MMR-style)
+diversity:
+  max_overlap_s: 5                # max time overlap between two top-10 promos
+

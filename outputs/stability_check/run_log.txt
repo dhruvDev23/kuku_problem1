@@ -1,0 +1,11 @@
+[11:08:06] Promo Finder starting — run_id=stability_check
+[11:08:06] Input folder: data/show
+[11:08:06] Config: provider=gemini
+[11:08:06] Offline baseline enabled; no LLM calls will be made.
+[11:08:06] Phase 1: parsed 50 episodes, 3671 events
+[11:08:06] Phase 3: Stage 1 returned 250 raw candidates in 0.0s
+[11:08:06] Phase 4: valid first pass=250, repaired=0, dropped=0
+[11:08:06] Phase 6: removed 0 duplicates, accepted 0 cross-episode combos
+[11:08:06] Phase 7: ranked 250 candidates
+[11:08:06] Phase 8: outputs written to outputs/stability_check
+[11:08:06] Completed in 0.2s
