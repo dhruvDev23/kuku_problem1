@@ -35,9 +35,11 @@ class NumberedCanvas(canvas.Canvas):
         self.drawRightString(letter[0] - 36, 20, text)
         self.restoreState()
 
-def build_pdf(filename="SOLUTION_DOC.pdf"):
+def build_pdf(filename="docs/SOLUTION_DOC.pdf"):
+    out_path = Path(filename)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     doc = SimpleDocTemplate(
-        filename,
+        str(out_path),
         pagesize=letter,
         leftMargin=36,
         rightMargin=36,
@@ -238,7 +240,12 @@ def build_pdf(filename="SOLUTION_DOC.pdf"):
 
     # Build the document
     doc.build(story, canvasmaker=NumberedCanvas)
-    print(f"Generated {filename}")
+    print(f"Generated {out_path}")
+    if out_path.resolve() != Path("SOLUTION_DOC.pdf").resolve():
+        import shutil
+        shutil.copyfile(out_path, "SOLUTION_DOC.pdf")
+        print("Synchronized root copy: SOLUTION_DOC.pdf")
 
 if __name__ == "__main__":
     build_pdf()
+
