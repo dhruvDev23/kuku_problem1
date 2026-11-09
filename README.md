@@ -25,7 +25,6 @@ The repository has been restructured to be clean, modular, and immediately intui
 ```
 kuku_problem1/
 ├── README.md                      # Complete project guide and run instructions (this file)
-├── ROADMAP.md                     # Original problem brief, build specification, and phases
 ├── config.yaml                    # Master pipeline configuration (models, thresholds, weights)
 ├── requirements.txt               # Core pipeline dependencies (google-genai, PyYAML, httpx, jsonschema)
 ├── requirements-dev.txt           # Testing and development dependencies (pytest, reportlab)
@@ -315,5 +314,5 @@ scoring:
 - **[docs/SOLUTION_DOC.pdf](docs/SOLUTION_DOC.pdf):** 2-page executive solution brief containing problem scoping, assumptions, pipeline diagram, scoring formula, evaluation metrics, failure analysis, scaling costs, and validation methodology.
 - **[docs/SOLUTION_NOTES.md](docs/SOLUTION_NOTES.md):** Detailed architectural write-up, mathematical formulas, cost breakdown tables, and interview discussion topics.
 - **[eval/failures.md](eval/failures.md):** Qualitative study of real failure modes encountered on raw screenplay data (e.g., quiet dialogue outranking visual action, lore dependencies, borderline durations).
-- **[ROADMAP.md](ROADMAP.md):** The original build specification and development checklist.
+- **[raw_outputs/](raw_outputs/):** Full unedited 50-episode run outputs (JSON, CSV, Markdown, validation reports).
 
