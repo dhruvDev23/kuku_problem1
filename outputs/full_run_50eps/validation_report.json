@@ -1,0 +1,20 @@
+{
+  "total_raw": 152,
+  "valid_first_pass": 56,
+  "repaired": 0,
+  "dropped": 96,
+  "valid_rate_pct": 36.8,
+  "repair_rate_pct": 0.0,
+  "drop_rate_pct": 63.2,
+  "drop_reasons": {
+    "cliffhanger_quote_unverified": 8,
+    "hook_quote_unverified": 3,
+    "too_short": 85
+  },
+  "repair_reasons": {},
+  "stage2_duplicates_removed": 0,
+  "stage2_combos_raw": 0,
+  "stage2_combos_valid": 0,
+  "stage2_combo_drop_reasons": {},
+  "total_after_stage2": 56
+}

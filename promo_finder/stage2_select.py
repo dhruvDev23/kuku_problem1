@@ -21,9 +21,64 @@ STAGE2_SCHEMA = {
     "type": "object",
     "required": ["duplicates_removed", "spoiler_flags", "cross_episode_combos"],
     "properties": {
-        "duplicates_removed": {"type": "array"},
-        "spoiler_flags": {"type": "array"},
-        "cross_episode_combos": {"type": "array"},
+        "duplicates_removed": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "candidate_id": {"type": "string"},
+                    "reason": {"type": "string"},
+                },
+            },
+        },
+        "spoiler_flags": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "candidate_id": {"type": "string"},
+                    "reason": {"type": "string"},
+                },
+            },
+        },
+        "cross_episode_combos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "candidate_id": {"type": "string"},
+                    "segments": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "episode": {"type": "integer"},
+                                "start_event_id": {"type": "integer"},
+                                "end_event_id": {"type": "integer"},
+                            },
+                        },
+                    },
+                    "hook_quote": {"type": "string"},
+                    "hook_description": {"type": "string"},
+                    "cliffhanger_quote": {"type": "string"},
+                    "cliffhanger_description": {"type": "string"},
+                    "why_it_works": {"type": "string"},
+                    "sub_scores": {
+                        "type": "object",
+                        "properties": {
+                            "hook": {"type": "integer"},
+                            "cliffhanger": {"type": "integer"},
+                            "standalone": {"type": "integer"},
+                            "pace": {"type": "integer"},
+                        },
+                    },
+                    "needs_context": {"type": "boolean"},
+                    "spoiler_risk": {"type": "string"},
+                    "visual_risk": {"type": "string"},
+                    "confidence": {"type": "integer"},
+                },
+            },
+        },
     },
 }
 
@@ -91,7 +146,11 @@ def run_stage2(
         + cand_text
     )
 
-    result = generate_json(prompt=prompt, schema=STAGE2_SCHEMA, stage="stage2")
+    try:
+        result = generate_json(prompt=prompt, schema=STAGE2_SCHEMA, stage="stage2")
+    except Exception as exc:
+        print(f"  [Warning] Stage 2 LLM quota exhausted ({exc}). Proceeding with heuristic deduplication.")
+        result = {"duplicates_removed": [], "spoiler_flags": [], "cross_episode_combos": []}
 
     if not isinstance(result, dict):
         raise ValueError(f"Stage 2 returned {type(result).__name__}, expected object")

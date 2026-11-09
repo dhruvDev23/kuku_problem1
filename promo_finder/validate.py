@@ -375,7 +375,8 @@ def validate_all(
                 validated.append(valid)
                 continue
 
-            if repair_fn is not None:
+            # Only repair if we do not already have enough valid candidates (target 20)
+            if repair_fn is not None and len(validated) < 20 and report.repaired < 5:
                 try:
                     repaired_raw = repair_fn(raw_candidate, candidate_episode, reason or "invalid")
                     repaired, repair_reason = validate_candidate(

@@ -10,7 +10,7 @@ import yaml
 
 from .cost import reset as reset_cost, set_log_file
 from .features import compute_features, heuristic_score
-from .llm import configure as configure_llm, reset_runtime_state
+from .llm import configure as configure_llm, reset_runtime_state, set_status_callback
 from .parse import parse_folder, parse_report
 from .rank import rank_candidates
 from .report import write_outputs
@@ -36,11 +36,14 @@ def run_pipeline(
     config_path: str | Path | None = None,
     use_context: bool = False,
     offline: bool = False,
-    repair_invalid: bool = True,
+    repair_invalid: bool = False,
     log_callback: Callable[[str], None] | None = None,
+    provider: str | None = None,
 ) -> dict:
     """Run every pipeline phase and write a raw output folder."""
     cfg, cfg_path = load_config(config_path)
+    if provider:
+        cfg["provider"] = provider
     configure_llm(cfg, cfg_path)
     reset_runtime_state()
     reset_cost()
@@ -59,6 +62,7 @@ def run_pipeline(
         if log_callback:
             log_callback(entry)
 
+    set_status_callback(log)
     log(f"Promo Finder starting — run_id={run_id}")
     log(f"Input folder: {input_folder}")
     log(f"Config: provider={cfg['provider']}")
@@ -79,10 +83,12 @@ def run_pipeline(
         episodes,
         use_context=use_context,
         offline=offline,
+        log_callback=log,
     )
     raw_count = sum(len(result.get("candidates", []) or []) for result in stage1_results)
     log(f"Phase 3: Stage 1 returned {raw_count} raw candidates in {time.time() - stage1_started:.1f}s")
 
+    log("Phase 4: Validating candidates, durations & boundaries...")
     promo_cfg = cfg.get("promo", {})
     validated, validation = validate_all(
         stage1_results,
@@ -109,7 +115,9 @@ def run_pipeline(
             "cross_episode_combos": [],
         }
     else:
+        log("Phase 5: Stage 2 analyzing global deduplication, plot spoilers & cross-episode combos...")
         stage2_result = run_stage2(validated, episodes, stage1_results)
+        log("Phase 5 complete: Stage 2 global analysis finished.")
 
     duplicate_records = stage2_result.get("duplicates_removed", []) or []
     duplicate_ids = {
@@ -165,14 +173,16 @@ def run_pipeline(
         candidate["heuristics"] = features
         heuristic_scores[candidate["candidate_id"]] = heuristic_score(features)
 
+    log(f"Phase 7: Ranking & scoring {len(validated)} candidates (MMR diversity & comparative rerank)...")
     ranked = rank_candidates(
         validated,
         heuristic_scores,
         config=cfg,
         rerank=not offline,
     )
-    log(f"Phase 7: ranked {len(ranked)} candidates")
+    log(f"Phase 7 complete: ranked {len(ranked)} candidates")
 
+    log("Phase 8: Generating output reports, JSON, and CSV files...")
     validation_dict["total_after_stage2"] = len(validated)
     write_outputs(
         run_id=run_id,
@@ -184,7 +194,7 @@ def run_pipeline(
         stage2_result=stage2_result,
     )
     log(f"Phase 8: outputs written to {run_path}")
-    log(f"Completed in {time.time() - started:.1f}s")
+    log(f"Pipeline complete! Completed in {time.time() - started:.1f}s")
     (run_path / "run_log.txt").write_text("\n".join(run_log), encoding="utf-8")
 
     return {

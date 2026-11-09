@@ -21,8 +21,53 @@ STAGE1_SCHEMA = {
     "properties": {
         "episode": {"type": "integer"},
         "episode_summary": {"type": "string"},
-        "characters": {"type": "array"},
-        "candidates": {"type": "array"},
+        "characters": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "role": {"type": "string"},
+                },
+            },
+        },
+        "candidates": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "candidate_id": {"type": "string"},
+                    "segments": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "start_event_id": {"type": "integer"},
+                                "end_event_id": {"type": "integer"},
+                            },
+                        },
+                    },
+                    "hook_quote": {"type": "string"},
+                    "hook_description": {"type": "string"},
+                    "cliffhanger_quote": {"type": "string"},
+                    "cliffhanger_description": {"type": "string"},
+                    "why_it_works": {"type": "string"},
+                    "sub_scores": {
+                        "type": "object",
+                        "properties": {
+                            "hook": {"type": "integer"},
+                            "cliffhanger": {"type": "integer"},
+                            "standalone": {"type": "integer"},
+                            "pace": {"type": "integer"},
+                        },
+                    },
+                    "needs_context": {"type": "boolean"},
+                    "spoiler_risk": {"type": "string"},
+                    "visual_risk": {"type": "string"},
+                    "confidence": {"type": "integer"},
+                },
+            },
+        },
     },
 }
 
@@ -127,10 +172,29 @@ def _offline_candidates(episode: Episode) -> dict:
     }
 
 
+def is_episode_cached(episode: Episode, prev_summaries: Optional[list[str]] = None) -> bool:
+    try:
+        from promo_finder.llm import is_cached, get_model_name
+        template = _load_prompt_template()
+        compact = render_compact(episode)
+        prompt_parts = [template, "\n═══ EPISODE SCREENPLAY ═══\n", compact]
+        if prev_summaries:
+            ctx = "\n".join(
+                f"  Episode {i+1}: {s}" for i, s in enumerate(prev_summaries)
+            )
+            prompt_parts.insert(1, f"\n═══ PREVIOUS EPISODE CONTEXT ═══\n{ctx}\n")
+        prompt = "\n".join(prompt_parts)
+        model = get_model_name("stage1")
+        return is_cached(prompt, model, STAGE1_SCHEMA, stage="stage1")
+    except Exception:
+        return False
+
+
 def run_stage1(
     episodes: list[Episode],
     use_context: bool = False,
     offline: bool = False,
+    log_callback: Optional[Callable[[str], None]] = None,
 ) -> list[dict]:
     """Run Stage 1, or a deterministic local baseline when offline is true."""
     if offline:
@@ -139,8 +203,13 @@ def run_stage1(
     results = []
     summaries: list[str] = []
     for i, ep in enumerate(episodes):
-        print(f"  Stage 1: Episode {ep.episode} ({i+1}/{len(episodes)})...", flush=True)
         prev = summaries[-2:] if use_context and summaries else None
+        cached_flag = is_episode_cached(ep, prev_summaries=prev)
+        status_suffix = " [Loaded from disk cache]" if cached_flag else ""
+        msg = f"Phase 2: Stage 1 extracting episode {ep.episode} ({i+1}/{len(episodes)})...{status_suffix}"
+        if log_callback:
+            log_callback(msg)
+        print(f"  Stage 1: Episode {ep.episode} ({i+1}/{len(episodes)})...{status_suffix}", flush=True)
         result = extract_candidates(ep, prev_summaries=prev)
         results.append(result)
         summaries.append(str(result.get("episode_summary", "")))

@@ -34,7 +34,6 @@ kuku_problem1/
 ├── find_promos.py                 # Primary CLI entry point
 ├── app.py                         # Streamlit interactive human review web UI
 ├── make_pdf.py                    # ReportLab script that compiles the 2-page solution PDF
-├── notebook.ipynb                 # Interactive Jupyter notebook walkthrough
 │
 ├── promo_finder/                  # Core Python Package
 │   ├── __init__.py
@@ -123,7 +122,7 @@ pip install -r requirements-ui.txt
 The pipeline supports Google Gemini (default) and OpenAI-compatible endpoints. Set your environment variable:
 
 ```bash
-# For Google Gemini (default: gemini-2.5-flash)
+# For Google Gemini (default: gemini-3.8-flash)
 export GEMINI_API_KEY="your-gemini-api-key"
 
 # OR for OpenAI-compatible endpoints
@@ -178,15 +177,7 @@ streamlit run app.py
 - View ranked top-10 promos with visual badges for hooks, cliffhangers, and content flags.
 - **Human Review Panel:** Editors can Approve, Reject, or Adjust timestamps, and log qualitative notes directly to `eval/editor_feedback.jsonl`.
 
-### Mode 4: Interactive Jupyter Notebook
-
-For an interactive walkthrough of the data ingestion, validation funnel, ranking tables, and markdown report rendering:
-
-```bash
-jupyter notebook notebook.ipynb
-```
-
-### Mode 5: Evaluation & Quality Benchmarking
+### Mode 4: Evaluation & Quality Benchmarking
 
 Evaluate generated promo runs against human-authored blind ground truth (`eval/gold_blind.json`):
 
@@ -195,10 +186,10 @@ Evaluate generated promo runs against human-authored blind ground truth (`eval/g
 python eval/run_eval.py outputs/baseline_50eps --gold eval/gold_blind.json
 
 # Evaluate stability between two different model runs (Top-20 Jaccard similarity)
-python eval/run_eval.py outputs/baseline_50eps --second-output outputs/notebook_run
+python eval/run_eval.py outputs/baseline_50eps --second-output outputs/demo_run
 ```
 
-### Mode 6: Automated Test Suite
+### Mode 5: Automated Test Suite
 
 Run the unit and integration tests across parser, validator, heuristics, ranking, and caching:
 
@@ -219,19 +210,18 @@ Outputs: `docs/SOLUTION_DOC.pdf` and synchronizes `SOLUTION_DOC.pdf` at the root
 
 ---
 
-## Output Artifacts
+## Output Artifacts & Submission Deliverables
 
-Every pipeline execution generates a timestamped directory inside `outputs/<run_id>/`:
+Per the assignment brief, unedited outputs from running on the full 50-episode input pack are provided in the **`raw_outputs/`** directory (and mirrored in `outputs/full_run_50eps/`):
 
 | Artifact | Format | Description |
 |---|---|---|
 | `promos.json` | JSON | Complete candidate dataset in deterministic rank order with episode IDs, float-second timestamps, quote snippets, component scores, and flags. |
 | `promos.csv` | CSV | Flat table view of all ranked candidates for quick spreadsheet import and data science analysis. |
-| `ranked_report.md` | Markdown | Executive summary detailing the Top 10 promos, their 3s hook, unresolved cliffhanger, rationale, and specific advice on which to post first. |
+| `ranked_report.md` | Markdown | Executive summary detailing the Top promos, their 3s hook, unresolved cliffhanger, rationale, and specific advice on which to post first. |
 | `validation_report.json` | JSON | Funnel accounting metrics: raw candidates proposed, valid on first pass, repaired, dropped, and reason distributions. |
 | `stage2_report.json` | JSON | Stage 2 audit log showing duplicate eliminations, spoiler risk flags, and cross-episode combo candidate evaluations. |
 | `cost_report.json` | JSON | Aggregate token count (prompt + candidate) and estimated USD cost based on published model pricing. |
-| `cost_log.jsonl` | JSONL | Granular, line-by-line token and latency log for every individual LLM API invocation. |
 | `parse_report.json` | JSON | Structural audit of the input screenplay: total episodes, event counts, dialogue vs action ratios, and parsing anomalies. |
 | `run_log.txt` | Text | Complete, timestamped console execution trace. |
 
@@ -285,9 +275,9 @@ All parameters are centrally managed in `config.yaml`:
 provider: gemini                    # 'gemini' or 'openai_compatible'
 gemini:
   api_key_env: GEMINI_API_KEY
-  stage1_model: gemini-2.5-flash
-  stage2_model: gemini-2.5-flash
-  rerank_model: gemini-2.5-flash
+  stage1_model: gemini-3.8-flash
+  stage2_model: gemini-3.8-flash
+  rerank_model: gemini-3.8-flash
 
 openai_compatible:
   api_key_env: OPENAI_API_KEY
@@ -326,3 +316,4 @@ scoring:
 - **[docs/SOLUTION_NOTES.md](docs/SOLUTION_NOTES.md):** Detailed architectural write-up, mathematical formulas, cost breakdown tables, and interview discussion topics.
 - **[eval/failures.md](eval/failures.md):** Qualitative study of real failure modes encountered on raw screenplay data (e.g., quiet dialogue outranking visual action, lore dependencies, borderline durations).
 - **[ROADMAP.md](ROADMAP.md):** The original build specification and development checklist.
+

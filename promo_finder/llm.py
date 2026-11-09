@@ -31,6 +31,20 @@ from .cost import log_call
 
 _CFG: dict | None = None
 _CFG_PATH: Path | None = None
+_STATUS_CALLBACK = None
+
+
+def set_status_callback(cb):
+    global _STATUS_CALLBACK
+    _STATUS_CALLBACK = cb
+
+
+def _notify_status(msg: str):
+    if _STATUS_CALLBACK:
+        try:
+            _STATUS_CALLBACK(msg)
+        except Exception:
+            pass
 
 
 def configure(config: dict | None = None, config_path: str | Path | None = None):
@@ -57,12 +71,16 @@ def reset_runtime_state():
 def get_model_name(stage: str) -> str:
     """Return the configured model name for a pipeline stage."""
     cfg = _load_config()
-    provider = cfg["provider"]
-    provider_cfg = cfg[provider]
+    provider = cfg.get("provider", "groq")
+    provider_cfg = cfg.get(provider, {})
     key = f"{stage}_model"
     if key not in provider_cfg:
         key = "stage1_model"
-    return provider_cfg[key]
+    if key in provider_cfg:
+        return provider_cfg[key]
+    if provider == "groq":
+        return "llama-3.3-70b-versatile"
+    return "gemini-3.8-flash"
 
 
 # ── Cache ────────────────────────────────────────────────
@@ -76,10 +94,42 @@ def _cache_path(key: str) -> Path:
     cfg = _load_config()
     d = Path(cfg.get("cache_dir", "cache"))
     if not d.is_absolute():
-        base = _CFG_PATH.parent if _CFG_PATH else Path(__file__).parent.parent
+        if _CFG_PATH and "promo-finder-" not in str(_CFG_PATH) and "tmp" not in str(_CFG_PATH):
+            base = _CFG_PATH.parent
+        else:
+            base = Path(__file__).resolve().parent.parent
         d = base / d
     d.mkdir(parents=True, exist_ok=True)
     return d / f"{key}.json"
+
+
+def is_cached(prompt: str, model: str | None = None, schema: dict | None = None, stage: str = "stage1") -> bool:
+    if model is None:
+        model = get_model_name(stage)
+    ckey = _cache_key(prompt, model, schema)
+    if _cache_get(ckey) is not None:
+        return True
+    return _find_cached_fallback(prompt, schema, model) is not None
+
+
+_KNOWN_MODELS = (
+    "qwen/qwen3.8-27b",
+    "gemini-3.8-flash",
+    "gemini-2.5-flash",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "llama3.2",
+    "gpt-4o-mini",
+)
+
+
+def _find_cached_fallback(prompt: str, schema: dict | None, current_model: str) -> tuple[str, dict | list] | None:
+    for alt_model in _KNOWN_MODELS:
+        if alt_model != current_model:
+            alt_key = _cache_key(prompt, alt_model, schema)
+            val = _cache_get(alt_key)
+            if val is not None:
+                return alt_key, val
+    return None
 
 
 def _cache_get(key: str) -> dict | list | None:
@@ -160,7 +210,9 @@ def _call_gemini(prompt: str, model: str, temperature: float,
     gen_config: dict[str, Any] = {"temperature": temperature}
     if schema:
         gen_config["response_mime_type"] = "application/json"
-        if schema.get("type") in {"object", "array"}:
+        if schema.get("type") in {"object", "array"} and (
+            schema.get("properties") or schema.get("items")
+        ):
             gen_config["response_schema"] = schema
 
     response = client.models.generate_content(
@@ -184,11 +236,16 @@ def _call_openai_compatible(prompt: str, model: str, temperature: float,
     import httpx
 
     cfg = _load_config()
-    oc = cfg["openai_compatible"]
-    api_key = os.environ.get(oc["api_key_env"], "")
+    provider = cfg.get("provider", "openai_compatible")
+    oc = cfg.get(provider, cfg.get("openai_compatible", {}))
+    api_key_env = oc.get("api_key_env", "OPENAI_API_KEY")
+    api_key = os.environ.get(api_key_env, "").strip()
     if not api_key:
-        raise RuntimeError(f"Set {oc['api_key_env']} environment variable")
-    base_url = oc["base_url"].rstrip("/")
+        if provider == "ollama":
+            api_key = "ollama"
+        else:
+            raise RuntimeError(f"Set {api_key_env} environment variable")
+    base_url = oc.get("base_url", "https://api.openai.com/v1").rstrip("/")
 
     headers = {
         "Authorization": f"Bearer {api_key}",
@@ -209,7 +266,16 @@ def _call_openai_compatible(prompt: str, model: str, temperature: float,
         headers=headers,
         timeout=120,
     )
-    resp.raise_for_status()
+    if resp.is_error:
+        err_msg = resp.text
+        try:
+            err_json = resp.json()
+            if "error" in err_json:
+                e = err_json["error"]
+                err_msg = e.get("message", resp.text) if isinstance(e, dict) else str(e)
+        except Exception:
+            pass
+        raise RuntimeError(f"API Error ({resp.status_code}): {err_msg}")
     data = resp.json()
 
     text = data["choices"][0]["message"]["content"]
@@ -220,6 +286,9 @@ def _call_openai_compatible(prompt: str, model: str, temperature: float,
 _PROVIDERS = {
     "gemini": _call_gemini,
     "openai_compatible": _call_openai_compatible,
+    "groq": _call_openai_compatible,
+    "openrouter": _call_openai_compatible,
+    "ollama": _call_openai_compatible,
 }
 
 
@@ -277,17 +346,25 @@ def generate_json(
     # Check cache
     ckey = _cache_key(prompt, model, schema)
     cached = _cache_get(ckey)
+    if cached is None:
+        fallback = _find_cached_fallback(prompt, schema, model)
+        if fallback is not None:
+            _, cached = fallback
+            _cache_put(ckey, cached)
     if cached is not None:
         return cached
 
     call_fn = _PROVIDERS[provider]
-    max_retries = max(1, int(cfg.get("max_retries", 3)))
+    max_retries = max(5, int(cfg.get("max_retries", 5)))
+    rate_limit_retries = 0
+    max_rate_limit_retries = 0 if stage == "rerank" else 8
     last_error = None
     repair_prompt_used = False
 
-    for attempt in range(max_retries):
+    while True:
         try:
             _rate_limit()
+            _notify_status(f"[LLM] Calling {provider.capitalize()} AI ({model}) for {stage}...")
             text, p_tokens, c_tokens = call_fn(prompt, model, temperature, schema)
             result = _extract_json(text)
             _validate_schema(result, schema)
@@ -305,28 +382,64 @@ def generate_json(
             return result
 
         except (ValueError, json.JSONDecodeError) as e:
+            if isinstance(e, UnicodeError):
+                raise
             last_error = e
-            if attempt < max_retries - 1 and not repair_prompt_used:
+            if not repair_prompt_used:
                 repair_prompt_used = True
                 prompt = (
                     prompt
                     + f"\n\n[SYSTEM: Your previous response was not valid JSON. "
                     f"Error: {e}. Please output ONLY valid JSON.]"
                 )
-                time.sleep(min(1.0, 0.25 * (attempt + 1)))
-            continue
+                time.sleep(1.0)
+                continue
+            raise RuntimeError(f"JSON validation failed: {last_error}") from e
 
         except Exception as e:
             last_error = e
             err_str = str(e).lower()
+            # Daily quota limits (e.g. 200k TPD, 20 requests/day) take hours to reset — do NOT retry in a 30s loop!
+            is_daily = any(kw in err_str for kw in ("per day", "daily", "tokens per day", "tpd", "resource_exhausted", "quota exceeded"))
+            if is_daily or stage == "rerank":
+                raise RuntimeError(f"API Quota Exhausted: {last_error}") from e
+
             if any(code in err_str for code in ("429", "500", "502", "503", "504")):
-                wait = (2 ** attempt) + random.uniform(0, 1)
-                print(f"  ⏳ Rate limited / server error, retry in {wait:.1f}s...")
-                time.sleep(wait)
+                rate_limit_retries += 1
+                if rate_limit_retries > max_rate_limit_retries:
+                    raise RuntimeError(
+                        f"Failed after {max_rate_limit_retries} rate-limit retries. Last error: {last_error}"
+                    ) from e
+                wait = (2 ** min(rate_limit_retries, 5)) + random.uniform(0, 1)
+                resp = getattr(e, "response", None)
+                if resp is not None and hasattr(resp, "headers"):
+                    retry_after = resp.headers.get("retry-after")
+                    reset_tokens = resp.headers.get("x-ratelimit-reset-tokens")
+                    if retry_after:
+                        try:
+                            wait = max(wait, float(retry_after) + 2.0)
+                        except ValueError:
+                            pass
+                    elif reset_tokens:
+                        try:
+                            clean_val = reset_tokens.strip().rstrip("s")
+                            wait = max(wait, float(clean_val) + 2.0)
+                        except ValueError:
+                            pass
+                status_msg = f"[Rate limit] {provider.capitalize()} cooling down {wait:.1f}s before retry attempt {rate_limit_retries} of {max_rate_limit_retries}..."
+                _notify_status(status_msg)
+                try:
+                    print(f"  {status_msg}")
+                except Exception:
+                    pass
+                wait_int = int(wait)
+                for _ in range(wait_int):
+                    time.sleep(1.0)
+                    _notify_status("cooling down")
+                remainder = wait - wait_int
+                if remainder > 0:
+                    time.sleep(remainder)
+                continue
             else:
                 raise
-
-    raise RuntimeError(
-        f"Failed after {max_retries} retries. Last error: {last_error}"
-    )
 

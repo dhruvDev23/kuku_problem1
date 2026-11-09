@@ -37,6 +37,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Use the deterministic local baseline; no API key or LLM calls",
     )
     parser.add_argument(
+        "--provider",
+        default=None,
+        choices=["gemini", "groq", "openrouter", "ollama", "openai_compatible"],
+        help="LLM provider (default: from config.yaml)",
+    )
+    parser.add_argument(
         "--no-repair",
         action="store_true",
         help="Drop invalid candidates instead of making repair calls",
@@ -60,6 +66,7 @@ def main(argv: list[str] | None = None) -> int:
             offline=args.offline,
             repair_invalid=not args.no_repair,
             log_callback=print_log,
+            provider=args.provider,
         )
     except (OSError, ValueError, RuntimeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

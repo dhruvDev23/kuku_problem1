@@ -3,13 +3,34 @@
 # ──────────────────────────────────────────────────────────
 
 # LLM Provider & Models
-provider: gemini                    # gemini | openai_compatible
+provider: groq                    # gemini | groq | openrouter | ollama | openai_compatible
 gemini:
   api_key_env: GEMINI_API_KEY       # env var name
   # Models — free tier Gemini
-  stage1_model: gemini-2.5-flash
-  stage2_model: gemini-2.5-flash
-  rerank_model: gemini-2.5-flash
+  stage1_model: gemini-3.8-flash
+  stage2_model: gemini-3.8-flash
+  rerank_model: gemini-3.8-flash
+
+groq:
+  api_key_env: GROQ_API_KEY
+  base_url: https://api.groq.com/openai/v1
+  stage1_model: qwen/qwen3.8-27b
+  stage2_model: qwen/qwen3.8-27b
+  rerank_model: qwen/qwen3.8-27b
+
+openrouter:
+  api_key_env: OPENROUTER_API_KEY
+  base_url: https://openrouter.ai/api/v1
+  stage1_model: meta-llama/llama-3.3-70b-instruct:free
+  stage2_model: meta-llama/llama-3.3-70b-instruct:free
+  rerank_model: meta-llama/llama-3.3-70b-instruct:free
+
+ollama:
+  api_key_env: OLLAMA_API_KEY
+  base_url: http://localhost:11434/v1
+  stage1_model: llama3.2
+  stage2_model: llama3.2
+  rerank_model: llama3.2
 
 openai_compatible:
   api_key_env: OPENAI_API_KEY
@@ -20,8 +41,8 @@ openai_compatible:
 
 # LLM Settings
 temperature: 0.2
-max_retries: 3
-requests_per_minute: 15           # free-tier rate limit
+max_retries: 5
+requests_per_minute: 15          # standard API pacing
 cache_dir: cache
 
 # Promo constraints

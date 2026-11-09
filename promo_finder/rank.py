@@ -186,11 +186,30 @@ def comparative_rerank(
     if not top:
         return candidates
 
-    result = generate_json(
-        prompt=prompt,
-        schema={"type": "object", "properties": {"ranked": {"type": "array"}}},
-        stage="rerank",
-    )
+    try:
+        result = generate_json(
+            prompt=prompt,
+            schema={
+                "type": "object",
+                "properties": {
+                    "ranked": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rank": {"type": "integer"},
+                                "candidate_id": {"type": "string"},
+                                "post_first_because": {"type": "string"},
+                            },
+                        },
+                    }
+                },
+            },
+            stage="rerank",
+        )
+    except Exception as exc:
+        print(f"  [Warning] Comparative rerank LLM quota exhausted ({exc}). Proceeding with multi-factor formula ranking.")
+        result = {"ranked": []}
 
     # Apply rerank positions
     ranked = result.get("ranked", []) if isinstance(result, dict) else []

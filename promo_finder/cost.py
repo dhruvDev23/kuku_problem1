@@ -15,9 +15,15 @@ from pathlib import Path
 
 # Approximate pricing per 1M tokens (USD) — free tier = 0
 _PRICING = {
+    "gemini-3.8-flash": {"input": 0.15, "output": 0.60},
     "gemini-2.5-flash": {"input": 0.15, "output": 0.60},
     "gemini-2.0-flash": {"input": 0.10, "output": 0.40},
     "gemini-1.5-flash": {"input": 0.075, "output": 0.30},
+    "qwen/qwen3.8-27b": {"input": 0.0, "output": 0.0},
+    "llama-3.3-70b-versatile": {"input": 0.0, "output": 0.0},
+    "llama-3.1-8b-instant": {"input": 0.0, "output": 0.0},
+    "meta-llama/llama-3.3-70b-instruct:free": {"input": 0.0, "output": 0.0},
+    "llama3.2": {"input": 0.0, "output": 0.0},
     "gpt-4o-mini": {"input": 0.15, "output": 0.60},
     "gpt-4o": {"input": 2.50, "output": 10.0},
 }

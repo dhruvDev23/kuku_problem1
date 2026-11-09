@@ -1,0 +1,3271 @@
+[
+  {
+    "candidate_id": "ep41_a",
+    "promo_id": "ep41_a",
+    "segments": [
+      {
+        "episode": 41,
+        "start_event_id": 1,
+        "end_event_id": 6,
+        "start_s": 1.8,
+        "end_s": 12.7,
+        "start": "00:01.80",
+        "end": "00:12.70"
+      },
+      {
+        "episode": 41,
+        "start_event_id": 12,
+        "end_event_id": 14,
+        "start_s": 17.5,
+        "end_s": 26.0,
+        "start": "00:17.50",
+        "end": "00:26.00"
+      },
+      {
+        "episode": 41,
+        "start_event_id": 43,
+        "end_event_id": 45,
+        "start_s": 81.0,
+        "end_s": 84.5,
+        "start": "01:21.00",
+        "end": "01:24.50"
+      }
+    ],
+    "duration_s": 22.9,
+    "hook": "A bride abruptly halts her own wedding to command silence, creating immediate tension and curiosity about the interruption.",
+    "hook_quote": "Wait.",
+    "cliffhanger": "The explosion has just occurred, causing chaos, but the source and the identity of the attackers are still hidden in the smoke.",
+    "cliffhanger_quote": "Rapid series of panic shots: aristocratic guests ducking behind pews, covering their heads in terror, women shrieking as plaster rains down.",
+    "why_it_works": "It juxtaposes the extreme cruelty of the public shaming with the sudden, violent disruption of the event, promising a dramatic reversal.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 2,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.24,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 1,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 2.67,
+      "first_3s_event_count": 8,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.25
+    },
+    "heuristic_score": 3.78,
+    "final_score": 0.8917,
+    "rerank_position": 1,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.9242,
+    "rank": 1
+  },
+  {
+    "candidate_id": "ep21_a",
+    "promo_id": "ep21_a",
+    "segments": [
+      {
+        "episode": 21,
+        "start_event_id": 2,
+        "end_event_id": 24,
+        "start_s": 3.5,
+        "end_s": 40.4,
+        "start": "00:03.50",
+        "end": "00:40.40"
+      },
+      {
+        "episode": 21,
+        "start_event_id": 61,
+        "end_event_id": 71,
+        "start_s": 91.0,
+        "end_s": 108.4,
+        "start": "01:31.00",
+        "end": "01:48.40"
+      }
+    ],
+    "duration_s": 54.3,
+    "hook": "The violent physical action of the doors slamming open immediately signals urgency and breaks the quiet, stopping the scroll.",
+    "hook_quote": "A loud wooden slam as the heavy double barn doors violently fly open.",
+    "cliffhanger": "The reveal that the powerful Dowager Duchess is secretly dying creates a high-stakes mystery that is left unresolved.",
+    "cliffhanger_quote": "Inside that massive house with all their wealth, she is fading to nothing, and no one can stop it.",
+    "why_it_works": "It juxtaposes the immediate, visceral crisis of a dying child with the shocking political/medical secret of the antagonist, creating a strong narrative hook.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 1,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.26,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.67,
+      "first_3s_event_count": 5,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.47
+    },
+    "heuristic_score": 3.06,
+    "final_score": 0.8773,
+    "rerank_position": 2,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.9087,
+    "rank": 2
+  },
+  {
+    "candidate_id": "ep03_a",
+    "promo_id": "ep03_a",
+    "segments": [
+      {
+        "episode": 3,
+        "start_event_id": 46,
+        "end_event_id": 71,
+        "start_s": 58.3,
+        "end_s": 85.4,
+        "start": "00:58.30",
+        "end": "01:25.40"
+      }
+    ],
+    "duration_s": 27.1,
+    "hook": "Immediate physical conflict: guards seizing a woman in a wedding dress, followed by a stranger's imposing entrance.",
+    "hook_quote": "Guards! Remove her!",
+    "cliffhanger": "The stranger has just violently defeated the first guard; the outcome of the confrontation with the remaining guards and the family is unknown.",
+    "cliffhanger_quote": "A heavy, bone-rattling punch followed by the clatter and thud of the guard collapsing onto the stone floor.",
+    "why_it_works": "Combines high-stakes physical action (dragging/punching) with a mysterious savior entrance, creating immediate tension and curiosity about the stranger's identity.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 2,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 9.59,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 4,
+      "unintroduced_speakers": 3,
+      "first_3s_density": 1.33,
+      "first_3s_event_count": 4,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.31
+    },
+    "heuristic_score": 3.24,
+    "final_score": 0.859,
+    "rerank_position": 3,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8904,
+    "rank": 3
+  },
+  {
+    "candidate_id": "ep23_a",
+    "promo_id": "ep23_a",
+    "segments": [
+      {
+        "episode": 23,
+        "start_event_id": 18,
+        "end_event_id": 44,
+        "start_s": 38.5,
+        "end_s": 88.0,
+        "start": "00:38.50",
+        "end": "01:28.00"
+      }
+    ],
+    "duration_s": 49.5,
+    "hook": "A sharp, defiant rejection of the doctor's diagnosis, immediately signaling a hidden truth and shifting the tone from tragedy to thriller.",
+    "hook_quote": "No.",
+    "cliffhanger": "The specific poison is named, but the identity of the poisoner is unknown, leaving the viewer desperate to know who is doing this.",
+    "cliffhanger_quote": "Arsenic.",
+    "why_it_works": "It condenses the entire mystery into a rapid diagnostic sequence that ends on a high-stakes accusation without revealing the culprit.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.45,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.37
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.8535,
+    "rerank_position": 4,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8811,
+    "rank": 4
+  },
+  {
+    "candidate_id": "ep18_a",
+    "promo_id": "ep18_a",
+    "segments": [
+      {
+        "episode": 18,
+        "start_event_id": 0,
+        "end_event_id": 13,
+        "start_s": 0.0,
+        "end_s": 22.5,
+        "start": "00:00.00",
+        "end": "00:22.50"
+      }
+    ],
+    "duration_s": 22.5,
+    "hook": "Immediate visual threat of fire and smoke creates instant tension and curiosity about who is in danger.",
+    "hook_quote": "Low-angle shot on the wooden floor as bright orange flames crackle beneath the closed bedroom door, thick smoke billowing through the crevices.",
+    "cliffhanger": "The rescue has just begun, but the outcome of escaping the burning room is unknown.",
+    "cliffhanger_quote": "Juliana! Get up!",
+    "why_it_works": "High-stakes physical danger combined with a sudden, urgent entrance creates a compelling 'will they survive?' hook.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.22,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.29
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.841,
+    "rerank_position": 5,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8669,
+    "rank": 5
+  },
+  {
+    "candidate_id": "ep12_a",
+    "promo_id": "ep12_a",
+    "segments": [
+      {
+        "episode": 12,
+        "start_event_id": 0,
+        "end_event_id": 16,
+        "start_s": 0.0,
+        "end_s": 27.9,
+        "start": "00:00.00",
+        "end": "00:27.90"
+      }
+    ],
+    "duration_s": 27.9,
+    "hook": "Immediate high-stakes arrest scene with physical confrontation and handcuffs.",
+    "hook_quote": "Put out your hands, veteran. You are under arrest for theft.",
+    "cliffhanger": "Juliana accuses Gerald of framing Alexander, but the truth of the setup is not yet revealed to the audience.",
+    "cliffhanger_quote": "You planted it!",
+    "why_it_works": "Establishes the central conflict (arrest) and the antagonist's involvement (Gerald/Clarissa) with rapid dialogue and physical action.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.09,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 4,
+      "unintroduced_speakers": 4,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.47
+    },
+    "heuristic_score": 2.64,
+    "final_score": 0.8365,
+    "rerank_position": 6,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8583,
+    "rank": 6
+  },
+  {
+    "candidate_id": "ep02_a",
+    "promo_id": "ep02_a",
+    "segments": [
+      {
+        "episode": 2,
+        "start_event_id": 1,
+        "end_event_id": 15,
+        "start_s": 0.0,
+        "end_s": 23.7,
+        "start": "00:00.00",
+        "end": "00:23.70"
+      }
+    ],
+    "duration_s": 23.7,
+    "hook": "Immediate, shocking rejection at the altar with a clear visual of the groom looking down dismissively.",
+    "hook_quote": "I cannot marry you, Juliana.",
+    "cliffhanger": "The groom explicitly states he is choosing someone else, leaving the audience to wonder who 'the better choice' is and how Juliana will react.",
+    "cliffhanger_quote": "Promises change when a better choice appears.",
+    "why_it_works": "It captures the core inciting incident of the drama: public betrayal at the most vulnerable moment.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 1,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.33,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.4
+    },
+    "heuristic_score": 3.18,
+    "final_score": 0.8317,
+    "rerank_position": 7,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8495,
+    "rank": 7
+  },
+  {
+    "candidate_id": "ep01_b",
+    "promo_id": "ep01_b",
+    "segments": [
+      {
+        "episode": 1,
+        "start_event_id": 31,
+        "end_event_id": 44,
+        "start_s": 46.8,
+        "end_s": 68.8,
+        "start": "00:46.80",
+        "end": "01:08.80"
+      }
+    ],
+    "duration_s": 22.0,
+    "hook": "Juliana's raw, accusing outburst immediately signals a deep conspiracy and emotional high stakes.",
+    "hook_quote": "You knew this before I walked through those doors!",
+    "cliffhanger": "The sister's mocking dismissal of the engagement vow leaves the audience with a sense of cold, calculated cruelty rather than a resolution.",
+    "cliffhanger_quote": "People change their minds, sister.",
+    "why_it_works": "The rapid dialogue exchange highlights the contrast between Juliana's desperation and the antagonists' coldness, driving engagement through emotional intensity.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.36,
+      "max_speaker_run": 4,
+      "monologue_penalty": 1,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 0.33,
+      "first_3s_event_count": 1,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 2.46,
+    "final_score": 0.8297,
+    "rerank_position": 8,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8426,
+    "rank": 8
+  },
+  {
+    "candidate_id": "ep01_a",
+    "promo_id": "ep01_a",
+    "segments": [
+      {
+        "episode": 1,
+        "start_event_id": 6,
+        "end_event_id": 26,
+        "start_s": 11.0,
+        "end_s": 41.2,
+        "start": "00:11.00",
+        "end": "00:41.20"
+      }
+    ],
+    "duration_s": 30.2,
+    "hook": "A cold, commanding voice stops the bride mid-aisle, creating immediate tension and confusion for the viewer.",
+    "hook_quote": "You should turn around, Juliana.",
+    "cliffhanger": "The sister reveals the betrayal directly, leaving the audience in shock before Juliana can react or the scene resolves.",
+    "cliffhanger_quote": "Because he is marrying me.",
+    "why_it_works": "It captures the core 'wedding day betrayal' trope with a clear setup (bride walking) and a shocking reveal (sister is the bride) that is instantly understandable.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.95,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 3,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.43
+    },
+    "heuristic_score": 2.64,
+    "final_score": 0.824,
+    "rerank_position": 9,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8332,
+    "rank": 9
+  },
+  {
+    "candidate_id": "ep15_a",
+    "promo_id": "ep15_a",
+    "segments": [
+      {
+        "episode": 15,
+        "start_event_id": 2,
+        "end_event_id": 16,
+        "start_s": 3.5,
+        "end_s": 22.5,
+        "start": "00:03.50",
+        "end": "00:22.50"
+      }
+    ],
+    "duration_s": 19.0,
+    "hook": "Immediate physical destruction and violence against property, creating instant tension.",
+    "hook_quote": "The thug brutally smashes his club down into a wooden planter box, shattering the frame.",
+    "cliffhanger": "The act of desecration is complete, but the emotional and physical consequences for Juliana are just beginning; the viewer doesn't know if she will be harmed further or if help is coming.",
+    "cliffhanger_quote": "The bald thug flings the bouquet into the mud and grinds his heavy boot directly onto the delicate flowers.",
+    "why_it_works": "It establishes the conflict (destruction of something precious) and the antagonist's cruelty without needing prior context.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 2,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.89,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 3,
+      "first_3s_density": 1.67,
+      "first_3s_event_count": 5,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.27
+    },
+    "heuristic_score": 3.24,
+    "final_score": 0.809,
+    "rerank_position": 10,
+    "post_first_because": "Strongest balance of a stop-scrolling hook, standalone conflict, and an unresolved ending in the final shortlist.",
+    "final_blended_score": 0.8172,
+    "rank": 10
+  },
+  {
+    "candidate_id": "ep36_a",
+    "promo_id": "ep36_a",
+    "segments": [
+      {
+        "episode": 36,
+        "start_event_id": 58,
+        "end_event_id": 82,
+        "start_s": 96.8,
+        "end_s": 138.8,
+        "start": "01:36.80",
+        "end": "02:18.80"
+      }
+    ],
+    "duration_s": 42.0,
+    "hook": "High-stakes interrogation; the protagonist is desperate and aggressive, demanding the location of his missing wife.",
+    "hook_quote": "Then where is she?",
+    "cliffhanger": "The ultimate threat is revealed: the wife is not just missing, but sentenced to death. The clip cuts before Alexander's reaction or plan.",
+    "cliffhanger_quote": "She is to be executed.",
+    "why_it_works": "It isolates the core conflict (wife in danger) and delivers a shocking, high-stakes reveal that demands immediate resolution.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.95,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.52
+    },
+    "heuristic_score": 2.88,
+    "final_score": 0.808,
+    "rerank_position": 11,
+    "post_first_because": "",
+    "final_blended_score": 0.8111,
+    "rank": 11
+  },
+  {
+    "candidate_id": "ep18_b",
+    "promo_id": "ep18_b",
+    "segments": [
+      {
+        "episode": 18,
+        "start_event_id": 29,
+        "end_event_id": 48,
+        "start_s": 52.5,
+        "end_s": 90.0,
+        "start": "00:52.50",
+        "end": "01:30.00"
+      }
+    ],
+    "duration_s": 37.5,
+    "hook": "A specific, valuable object is in immediate danger, creating a moral dilemma: save the person or the object?",
+    "hook_quote": "Close-up of the antique, leather-bound herbal ledger resting on a burning wooden table, the edges of its pages beginning to curl and singe in the heat.",
+    "cliffhanger": "The character is literally under a falling beam; the viewer doesn't know if she was saved in time.",
+    "cliffhanger_quote": "Massive wooden beam crashes directly where Juliana had been standing, showering them in sparks.",
+    "why_it_works": "The conflict between saving a loved one and a cherished heirloom, resolved by a near-death physical rescue, is highly dramatic and standalone.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.33,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 0.33,
+      "first_3s_event_count": 1,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.4
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.8035,
+    "rerank_position": 12,
+    "post_first_because": "",
+    "final_blended_score": 0.8024,
+    "rank": 12
+  },
+  {
+    "candidate_id": "ep43_a",
+    "promo_id": "ep43_a",
+    "segments": [
+      {
+        "episode": 43,
+        "start_event_id": 1,
+        "end_event_id": 18,
+        "start_s": 0.6,
+        "end_s": 21.5,
+        "start": "00:00.60",
+        "end": "00:21.50"
+      }
+    ],
+    "duration_s": 20.9,
+    "hook": "Opens on a man screaming in hysterical panic, immediately establishing high-stakes conflict and confusion.",
+    "hook_quote": "You're lying!",
+    "cliffhanger": "The guards defy the screaming nobleman and salute the other man, leaving the viewer confused about who the real authority is and why the guards are refusing an arrest order.",
+    "cliffhanger_quote": "No. He is your Duke.",
+    "why_it_works": "It captures the peak of the confrontation where the power dynamic shifts abruptly from the screaming antagonist to the silent, authoritative protagonist, creating a strong 'who is the real boss?' hook.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 8.61,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.39
+    },
+    "heuristic_score": 2.88,
+    "final_score": 0.7955,
+    "rerank_position": 13,
+    "post_first_because": "",
+    "final_blended_score": 0.7914,
+    "rank": 13
+  },
+  {
+    "candidate_id": "ep04_a",
+    "promo_id": "ep04_a",
+    "segments": [
+      {
+        "episode": 4,
+        "start_event_id": 4,
+        "end_event_id": 11,
+        "start_s": 3.4,
+        "end_s": 14.2,
+        "start": "00:03.40",
+        "end": "00:14.20"
+      },
+      {
+        "episode": 4,
+        "start_event_id": 85,
+        "end_event_id": 92,
+        "start_s": 114.8,
+        "end_s": 125.5,
+        "start": "01:54.80",
+        "end": "02:05.50"
+      }
+    ],
+    "duration_s": 21.5,
+    "hook": "Opens with a character stepping forward with a smug, sneering grin to deliver a cutting insult, immediately establishing conflict and high stakes.",
+    "hook_quote": "Look at him.",
+    "cliffhanger": "Juliana delivers a final, defiant line that cuts off the family's reaction, leaving the viewer to wonder if they will accept this rejection or escalate the confrontation.",
+    "cliffhanger_quote": "...than spend another moment begging for yours.",
+    "why_it_works": "It juxtaposes the initial public humiliation with the protagonist's powerful, calm retaliation, creating a satisfying emotional arc in under 30 seconds.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.44,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 2.33,
+      "first_3s_event_count": 7,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 3.06,
+    "final_score": 0.7897,
+    "rerank_position": 14,
+    "post_first_because": "",
+    "final_blended_score": 0.7819,
+    "rank": 14
+  },
+  {
+    "candidate_id": "ep50_a",
+    "promo_id": "ep50_a",
+    "segments": [
+      {
+        "episode": 50,
+        "start_event_id": 10,
+        "end_event_id": 16,
+        "start_s": 16.8,
+        "end_s": 35.0,
+        "start": "00:16.80",
+        "end": "00:35.00"
+      }
+    ],
+    "duration_s": 18.2,
+    "hook": "A direct, transactional command that immediately establishes a power dynamic and high stakes without needing prior context.",
+    "hook_quote": "Name your price.",
+    "cliffhanger": "The priest's cold, calculated refusal to offer forgiveness for free, implying a dangerous cost that is not yet fully revealed or accepted.",
+    "cliffhanger_quote": "Absolution is free. Discretion has a price.",
+    "why_it_works": "It frames the intimate setting as a high-stakes business negotiation, creating immediate tension about what the 'price' is and whether Catherine will pay it.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 3.85,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.57
+    },
+    "heuristic_score": 2.58,
+    "final_score": 0.7843,
+    "rerank_position": 15,
+    "post_first_because": "",
+    "final_blended_score": 0.7726,
+    "rank": 15
+  },
+  {
+    "candidate_id": "ep17_a",
+    "promo_id": "ep17_a",
+    "segments": [
+      {
+        "episode": 17,
+        "start_event_id": 14,
+        "end_event_id": 26,
+        "start_s": 18.2,
+        "end_s": 35.8,
+        "start": "00:18.20",
+        "end": "00:35.80"
+      }
+    ],
+    "duration_s": 17.6,
+    "hook": "Immediate emotional confrontation revealing a recent violent threat and the protagonist's role as protector.",
+    "hook_quote": "For standing between me and those men.",
+    "cliffhanger": "Alexander makes a definitive, absolute promise to protect her, leaving the viewer to wonder if he can keep it against such odds.",
+    "cliffhanger_quote": "I just did.",
+    "why_it_works": "Combines high-stakes dialogue about violence with a powerful, definitive vow that creates immediate emotional investment.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.39,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.54
+    },
+    "heuristic_score": 2.88,
+    "final_score": 0.783,
+    "rerank_position": 16,
+    "post_first_because": "",
+    "final_blended_score": 0.7663,
+    "rank": 16
+  },
+  {
+    "candidate_id": "ep45_a",
+    "promo_id": "ep45_a",
+    "segments": [
+      {
+        "episode": 45,
+        "start_event_id": 38,
+        "end_event_id": 46,
+        "start_s": 51.8,
+        "end_s": 70.5,
+        "start": "00:51.80",
+        "end": "01:10.50"
+      }
+    ],
+    "duration_s": 18.7,
+    "hook": "Immediate, high-stakes accusation of murder and torture creates instant tension and moral outrage.",
+    "hook_quote": "You poisoned my mother. You tortured my wife.",
+    "cliffhanger": "Catherine's shocked reaction to the word 'wife' leaves the audience wondering how this revelation changes the power dynamic or what she will do next.",
+    "cliffhanger_quote": "Wife?!",
+    "why_it_works": "Combines a shocking reveal of past crimes with a sudden status shift for the protagonist, creating a perfect emotional spike.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.81,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.56
+    },
+    "heuristic_score": 2.46,
+    "final_score": 0.7797,
+    "rerank_position": 17,
+    "post_first_because": "",
+    "final_blended_score": 0.7585,
+    "rank": 17
+  },
+  {
+    "candidate_id": "ep22_a",
+    "promo_id": "ep22_a",
+    "segments": [
+      {
+        "episode": 22,
+        "start_event_id": 23,
+        "end_event_id": 44,
+        "start_s": 43.0,
+        "end_s": 72.6,
+        "start": "00:43.00",
+        "end": "01:12.60"
+      }
+    ],
+    "duration_s": 29.6,
+    "hook": "A sharp, stern voice cuts through the tension as the formidable Housekeeper confronts the disguised Lady Juliana, immediately raising the stakes of exposure.",
+    "hook_quote": "Prudence.",
+    "cliffhanger": "Juliana gives a meek answer to the Housekeeper's menacing question about keeping her eyes and ears in place, leaving the viewer unsure if her cover is blown or if she has successfully deceived the guard.",
+    "cliffhanger_quote": "Yes, ma'am.",
+    "why_it_works": "It captures the high-stakes cat-and-mouse dynamic of the infiltration, relying on facial expressions and sharp dialogue to create immediate tension without needing prior context.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.43,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.7785,
+    "rerank_position": 18,
+    "post_first_because": "",
+    "final_blended_score": 0.7522,
+    "rank": 18
+  },
+  {
+    "candidate_id": "ep38_a",
+    "promo_id": "ep38_a",
+    "segments": [
+      {
+        "episode": 38,
+        "start_event_id": 2,
+        "end_event_id": 13,
+        "start_s": 3.2,
+        "end_s": 22.0,
+        "start": "00:03.20",
+        "end": "00:22.00"
+      }
+    ],
+    "duration_s": 18.8,
+    "hook": "The sound of approaching footsteps creates immediate tension for a prisoner in a dark cell, prompting a stop-scroll reaction to see who is coming.",
+    "hook_quote": "Echoing, heavy bootsteps approach down the corridor outside the cell.",
+    "cliffhanger": "The guard's urgent warning implies an immediate threat of discovery, leaving the viewer wondering if Juliana will be caught or what happens next.",
+    "cliffhanger_quote": "Eat it before they see.",
+    "why_it_works": "It combines the visual intrigue of a secret act of kindness in a hostile environment with a sharp, urgent cliffhanger that raises the stakes.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.38,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.25
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.7785,
+    "rerank_position": 19,
+    "post_first_because": "",
+    "final_blended_score": 0.7468,
+    "rank": 19
+  },
+  {
+    "candidate_id": "ep21_b",
+    "promo_id": "ep21_b",
+    "segments": [
+      {
+        "episode": 21,
+        "start_event_id": 12,
+        "end_event_id": 24,
+        "start_s": 18.2,
+        "end_s": 40.4,
+        "start": "00:18.20",
+        "end": "00:40.40"
+      },
+      {
+        "episode": 21,
+        "start_event_id": 66,
+        "end_event_id": 71,
+        "start_s": 96.5,
+        "end_s": 108.4,
+        "start": "01:36.50",
+        "end": "01:48.40"
+      }
+    ],
+    "duration_s": 34.1,
+    "hook": "A raw, emotional accusation about class discrimination and medical neglect grabs attention through social conflict.",
+    "hook_quote": "He shut the door in my face because we have no silver!",
+    "cliffhanger": "The twist that the 'rich' are also vulnerable to this mysterious illness is revealed just as the clip ends.",
+    "cliffhanger_quote": "Inside that massive house with all their wealth, she is fading to nothing, and no one can stop it.",
+    "why_it_works": "It frames the story as a class-warfare drama where the outcast has the power to save the elite, a compelling trope for short-form drama.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 1,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.57,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.67,
+      "first_3s_event_count": 5,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.53
+    },
+    "heuristic_score": 3.06,
+    "final_score": 0.7897,
+    "rerank_position": 21,
+    "post_first_because": "",
+    "final_blended_score": 0.7437,
+    "rank": 20
+  },
+  {
+    "candidate_id": "ep46_a",
+    "promo_id": "ep46_a",
+    "segments": [
+      {
+        "episode": 46,
+        "start_event_id": 7,
+        "end_event_id": 16,
+        "start_s": 11.5,
+        "end_s": 31.8,
+        "start": "00:11.50",
+        "end": "00:31.80"
+      },
+      {
+        "episode": 46,
+        "start_event_id": 20,
+        "end_event_id": 22,
+        "start_s": 34.3,
+        "end_s": 42.5,
+        "start": "00:34.30",
+        "end": "00:42.50"
+      }
+    ],
+    "duration_s": 28.5,
+    "hook": "A booming, authoritative declaration of seizure immediately establishes high stakes and conflict.",
+    "hook_quote": "By Royal command, this sanctuary is placed under immediate Crown scesion.",
+    "cliffhanger": "The priest publicly humiliates the couple by declaring their marriage invalid, leaving the audience to wonder how they will respond to this public shaming.",
+    "cliffhanger_quote": "The church married a vagrant to a ruined lady. It never married the Duke of Ashburton to anyone.",
+    "why_it_works": "Combines the shock of the seizure with the emotional gut-punch of the marriage being declared void, creating immediate tension.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.56,
+      "max_speaker_run": 4,
+      "monologue_penalty": 1,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.33,
+      "first_3s_event_count": 4,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.46
+    },
+    "heuristic_score": 2.28,
+    "final_score": 0.773,
+    "rerank_position": 20,
+    "post_first_because": "",
+    "final_blended_score": 0.7375,
+    "rank": 21
+  },
+  {
+    "candidate_id": "ep35_a",
+    "promo_id": "ep35_a",
+    "segments": [
+      {
+        "episode": 35,
+        "start_event_id": 2,
+        "end_event_id": 6,
+        "start_s": 5.5,
+        "end_s": 15.5,
+        "start": "00:05.50",
+        "end": "00:15.50"
+      },
+      {
+        "episode": 35,
+        "start_event_id": 19,
+        "end_event_id": 23,
+        "start_s": 37.0,
+        "end_s": 48.0,
+        "start": "00:37.00",
+        "end": "00:48.00"
+      }
+    ],
+    "duration_s": 21.0,
+    "hook": "A desperate, breathless declaration of survival from an elderly woman in a dark tunnel, immediately establishing high stakes and physical danger.",
+    "hook_quote": "I will not die in that house.",
+    "cliffhanger": "The mother confirms the son is alive after a presumed death, leaving the viewer to wonder how he survived and why she thought he was dead.",
+    "cliffhanger_quote": "You're alive.",
+    "why_it_works": "Combines a high-tension escape sequence with an emotional reunion that subverts the expectation of death, creating a strong emotional hook.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 4,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.76,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.4
+    },
+    "heuristic_score": 2.58,
+    "final_score": 0.7468,
+    "rerank_position": 22,
+    "post_first_because": "",
+    "final_blended_score": 0.7082,
+    "rank": 22
+  },
+  {
+    "candidate_id": "ep46_c",
+    "promo_id": "ep46_c",
+    "segments": [
+      {
+        "episode": 46,
+        "start_event_id": 58,
+        "end_event_id": 60,
+        "start_s": 112.0,
+        "end_s": 123.6,
+        "start": "01:52.00",
+        "end": "02:03.60"
+      },
+      {
+        "episode": 46,
+        "start_event_id": 64,
+        "end_event_id": 64,
+        "start_s": 127.2,
+        "end_s": 133.2,
+        "start": "02:07.20",
+        "end": "02:13.20"
+      }
+    ],
+    "duration_s": 17.6,
+    "hook": "Alexander's defiant challenge to the priest, with weapons pointed at him, creates a high-tension standoff.",
+    "hook_quote": "Then let it prove that in ten days, before witnesses. Not with six halberds pointed at me in my own chapel.",
+    "cliffhanger": "The threat of violence is unresolved, and the audience doesn't know if the guards will obey or if a fight will break out.",
+    "cliffhanger_quote": "Lower them! Or explain to the Crown why its own bailiffs raised iron on the Duke it just confirmed!",
+    "why_it_works": "Physical threat combined with a verbal duel creates a visceral, high-stakes moment that demands to be seen.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 2.27,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.75
+    },
+    "heuristic_score": 2.38,
+    "final_score": 0.7392,
+    "rerank_position": 23,
+    "post_first_because": "",
+    "final_blended_score": 0.6974,
+    "rank": 23
+  },
+  {
+    "candidate_id": "ep42_a",
+    "promo_id": "ep42_a",
+    "segments": [
+      {
+        "episode": 42,
+        "start_event_id": 2,
+        "end_event_id": 16,
+        "start_s": 11.2,
+        "end_s": 28.8,
+        "start": "00:11.20",
+        "end": "00:28.80"
+      }
+    ],
+    "duration_s": 17.6,
+    "hook": "A shocked nobleman trembles and demands the identity of the man striding through the ruins, creating immediate mystery and tension.",
+    "hook_quote": "Who are you?",
+    "cliffhanger": "The guard's firm declaration that they recognize the man's true identity is left hanging, implying a major reveal that the audience hasn't fully processed yet.",
+    "cliffhanger_quote": "Because we know who he is.",
+    "why_it_works": "It captures the power shift from the arrogant usurper to the returning hero, ending on the pivotal moment of recognition by the authority figures.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 8.52,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 4,
+      "unintroduced_speakers": 3,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.6
+    },
+    "heuristic_score": 2.64,
+    "final_score": 0.7365,
+    "rerank_position": 24,
+    "post_first_because": "",
+    "final_blended_score": 0.6901,
+    "rank": 24
+  },
+  {
+    "candidate_id": "ep47_a",
+    "promo_id": "ep47_a",
+    "segments": [
+      {
+        "episode": 47,
+        "start_event_id": 25,
+        "end_event_id": 34,
+        "start_s": 56.8,
+        "end_s": 74.8,
+        "start": "00:56.80",
+        "end": "01:14.80"
+      }
+    ],
+    "duration_s": 18.0,
+    "hook": "Immediate confrontation with a character kneeling in the mud, establishing high stakes and physical vulnerability.",
+    "hook_quote": "You dare show your face in Ashbourne courtyard?",
+    "cliffhanger": "The guard is ready to physically remove the pleading woman, leaving the outcome of her fate in the balance.",
+    "cliffhanger_quote": "One command, Your Grace, and I drag her past the gates.",
+    "why_it_works": "Combines visual desperation (kneeling in mud) with immediate threat of physical removal, creating instant tension.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.56,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 3,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 2.64,
+    "final_score": 0.7365,
+    "rerank_position": 25,
+    "post_first_because": "",
+    "final_blended_score": 0.6846,
+    "rank": 25
+  },
+  {
+    "candidate_id": "ep26_a",
+    "promo_id": "ep26_a",
+    "segments": [
+      {
+        "episode": 26,
+        "start_event_id": 35,
+        "end_event_id": 50,
+        "start_s": 90.2,
+        "end_s": 120.88,
+        "start": "01:30.20",
+        "end": "02:00.88"
+      }
+    ],
+    "duration_s": 30.7,
+    "hook": "The sudden, visceral sound of a gasp combined with the visual of the Duchess's face draining of color creates an immediate stop-scroll moment.",
+    "hook_quote": "A sharp, stunned gasp.",
+    "cliffhanger": "The Duchess has physically seized Juliana's hand to inspect the ring, but the specific identity or connection is not yet spoken, cutting to black before the answer.",
+    "cliffhanger_quote": "Tight close-up of the Dowager Duchess's two weathered hands tightly clasping Juliana's hand, holding the signet ring between them as a dramatic orchestral cliffhanger chord swells, cutting sharply to black.",
+    "why_it_works": "It captures the pivotal moment of recognition where a secret identity is threatened by a physical object, ending on high tension.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 1,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.21,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.25
+    },
+    "heuristic_score": 3.06,
+    "final_score": 0.7273,
+    "rerank_position": 26,
+    "post_first_because": "",
+    "final_blended_score": 0.6727,
+    "rank": 26
+  },
+  {
+    "candidate_id": "ep49_a",
+    "promo_id": "ep49_a",
+    "segments": [
+      {
+        "episode": 49,
+        "start_event_id": 34,
+        "end_event_id": 40,
+        "start_s": 77.2,
+        "end_s": 97.8,
+        "start": "01:17.20",
+        "end": "01:37.80"
+      }
+    ],
+    "duration_s": 20.6,
+    "hook": "Catherine\u2019s cold, commanding voice laying out specific, high-stakes political demands immediately signals a power struggle and conspiracy.",
+    "hook_quote": "First, the hearing stays unresolved as long as possible. Every extension, every delay, every excuse to reconvene.",
+    "cliffhanger": "The demand for total surveillance of the council is made, but the reaction of the priest (the potential traitor) is cut off, leaving the viewer wondering if he will comply or refuse.",
+    "cliffhanger_quote": "I want eyes and ears everywhere that decides my future.",
+    "why_it_works": "It isolates the core conflict (manipulation of justice) and ends on a defiant, high-stakes declaration that implies imminent danger.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 3.4,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.33,
+      "first_3s_event_count": 1,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.57
+    },
+    "heuristic_score": 2.58,
+    "final_score": 0.7218,
+    "rerank_position": 27,
+    "post_first_because": "",
+    "final_blended_score": 0.6634,
+    "rank": 27
+  },
+  {
+    "candidate_id": "ep15_c",
+    "promo_id": "ep15_c",
+    "segments": [
+      {
+        "episode": 15,
+        "start_event_id": 41,
+        "end_event_id": 54,
+        "start_s": 60.0,
+        "end_s": 86.0,
+        "start": "01:00.00",
+        "end": "01:26.00"
+      }
+    ],
+    "duration_s": 26.0,
+    "hook": "Imminent physical violence against the protagonist, creating a 'will he or won't he' tension.",
+    "hook_quote": "The Tall Thug hoists his heavy wooden club above his head to crush the remaining herbs right before Juliana.",
+    "cliffhanger": "The confrontation is at its peak, with Alexander positioned to fight, but the actual outcome of the fight is not shown.",
+    "cliffhanger_quote": "SOUND: Tense, low dramatic cello swell holding into an abrupt cliffhanger cut.",
+    "why_it_works": "It combines the threat of violence with the arrival of a powerful protector, leaving the viewer desperate to see the fight.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.38,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.21
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.716,
+    "rerank_position": 28,
+    "post_first_because": "",
+    "final_blended_score": 0.6539,
+    "rank": 28
+  },
+  {
+    "candidate_id": "ep31_b",
+    "promo_id": "ep31_b",
+    "segments": [
+      {
+        "episode": 31,
+        "start_event_id": 66,
+        "end_event_id": 86,
+        "start_s": 122.0,
+        "end_s": 160.0,
+        "start": "02:02.00",
+        "end": "02:40.00"
+      }
+    ],
+    "duration_s": 38.0,
+    "hook": "A sudden shift in power dynamics where the antagonist is shocked, followed immediately by the destruction of a sentimental object (the book).",
+    "hook_quote": "ACTION: Catherine's smug expression freezes, her eyes widening in momentary shock and fury as the blow lands squarely.",
+    "cliffhanger": "The hot iron is inches from Juliana's face, threatening to burn her eyes or skin, cutting before the impact or reaction.",
+    "cliffhanger_quote": "CAMERA: Extreme macro close-up of Juliana's wide, trembling eye. The brilliant orange ember of the hot poker reflects clearly in the center of her pupil, holding on the terrifying cliffhanger before an abrupt cut.",
+    "why_it_works": "High-stakes physical threat combined with emotional devastation (burning the book) creates a powerful, visceral cliffhanger.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.53,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.33
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.716,
+    "rerank_position": 29,
+    "post_first_because": "",
+    "final_blended_score": 0.6485,
+    "rank": 29
+  },
+  {
+    "candidate_id": "ep48_a",
+    "promo_id": "ep48_a",
+    "segments": [
+      {
+        "episode": 48,
+        "start_event_id": 1,
+        "end_event_id": 13,
+        "start_s": 0.0,
+        "end_s": 26.5,
+        "start": "00:00.00",
+        "end": "00:26.50"
+      }
+    ],
+    "duration_s": 26.5,
+    "hook": "A cold, venomous smirk and a direct threat to destroy a rival's status immediately establishes high stakes and malice.",
+    "hook_quote": "Two words, and that healer's crown rolls right back into the gutter where it belongs.",
+    "cliffhanger": "The line implies a hidden, dangerous plan or trap that has not yet been revealed to the audience or the target.",
+    "cliffhanger_quote": "And doors can be closed from the other side.",
+    "why_it_works": "It transforms a period drama scene into a thriller by focusing on the antagonist's cold calculation and specific threat.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.91,
+      "max_speaker_run": 7,
+      "monologue_penalty": 4,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 1,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.54
+    },
+    "heuristic_score": 1.38,
+    "final_score": 0.7142,
+    "rerank_position": 30,
+    "post_first_because": "",
+    "final_blended_score": 0.6418,
+    "rank": 30
+  },
+  {
+    "candidate_id": "ep35_b",
+    "promo_id": "ep35_b",
+    "segments": [
+      {
+        "episode": 35,
+        "start_event_id": 26,
+        "end_event_id": 33,
+        "start_s": 52.5,
+        "end_s": 77.5,
+        "start": "00:52.50",
+        "end": "01:17.50"
+      },
+      {
+        "episode": 35,
+        "start_event_id": 58,
+        "end_event_id": 59,
+        "start_s": 126.0,
+        "end_s": 130.5,
+        "start": "02:06.00",
+        "end": "02:10.50"
+      }
+    ],
+    "duration_s": 29.5,
+    "hook": "A shocking, heartbreaking admission that the mother attended a funeral for the man standing in front of her, creating immediate cognitive dissonance.",
+    "hook_quote": "I buried you.",
+    "cliffhanger": "The mother asks who wanted her son dead, but the answer is withheld, leaving the conspiracy unresolved and the threat ambiguous.",
+    "cliffhanger_quote": "Who?",
+    "why_it_works": "Uses the emotional weight of a false death to drive curiosity about the conspiracy, ending on a direct question that demands an answer.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 3.39,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": true,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": true,
+      "dialogue_ratio": 0.8
+    },
+    "heuristic_score": 3.23,
+    "final_score": 0.7086,
+    "rerank_position": 31,
+    "post_first_because": "",
+    "final_blended_score": 0.6324,
+    "rank": 31
+  },
+  {
+    "candidate_id": "ep16_c",
+    "promo_id": "ep16_c",
+    "segments": [
+      {
+        "episode": 16,
+        "start_event_id": 11,
+        "end_event_id": 17,
+        "start_s": 14.3,
+        "end_s": 21.2,
+        "start": "00:14.30",
+        "end": "00:21.20"
+      },
+      {
+        "episode": 16,
+        "start_event_id": 33,
+        "end_event_id": 43,
+        "start_s": 40.8,
+        "end_s": 52.2,
+        "start": "00:40.80",
+        "end": "00:52.20"
+      }
+    ],
+    "duration_s": 18.3,
+    "hook": "Immediate physical violence: a thug lunges with a weapon, creating instant tension and action.",
+    "hook_quote": "Aaargh!",
+    "cliffhanger": "The name is revealed, but the reaction and the implications of this betrayal are left hanging.",
+    "cliffhanger_quote": "Harrington! Gerald Harrington paid us!",
+    "why_it_works": "Combines the action hook with the major plot reveal, providing a complete mini-arc of conflict and resolution.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 1,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 9.84,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 2.67,
+      "first_3s_event_count": 8,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.33
+    },
+    "heuristic_score": 3.36,
+    "final_score": 0.6885,
+    "rerank_position": 32,
+    "post_first_because": "",
+    "final_blended_score": 0.6129,
+    "rank": 32
+  },
+  {
+    "candidate_id": "ep03_c",
+    "promo_id": "ep03_c",
+    "segments": [
+      {
+        "episode": 3,
+        "start_event_id": 1,
+        "end_event_id": 16,
+        "start_s": 2.1,
+        "end_s": 22.5,
+        "start": "00:02.10",
+        "end": "00:22.50"
+      }
+    ],
+    "duration_s": 20.4,
+    "hook": "A direct, mocking confrontation between sisters in a wedding setting, immediately establishing conflict and betrayal.",
+    "hook_quote": "Look at you...",
+    "cliffhanger": "The sister claims the wedding as her own, leaving Juliana's reaction and the family's response unresolved.",
+    "cliffhanger_quote": "Now it is mine.",
+    "why_it_works": "Pure emotional confrontation with clear stakes (wedding theft) that is easily understood without prior context.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 3,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.84,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 2.88,
+    "final_score": 0.683,
+    "rerank_position": 33,
+    "post_first_because": "",
+    "final_blended_score": 0.6036,
+    "rank": 33
+  },
+  {
+    "candidate_id": "ep48_b",
+    "promo_id": "ep48_b",
+    "segments": [
+      {
+        "episode": 48,
+        "start_event_id": 17,
+        "end_event_id": 28,
+        "start_s": 30.9,
+        "end_s": 51.3,
+        "start": "00:30.90",
+        "end": "00:51.30"
+      }
+    ],
+    "duration_s": 20.4,
+    "hook": "A sharp, commanding order followed by the sound of a lock creates immediate tension and suggests illicit activity.",
+    "hook_quote": "Lock it.",
+    "cliffhanger": "The revelation that the protagonist is planning to infiltrate the enemy's home despite being watched is a shocking twist.",
+    "cliffhanger_quote": "I'm not leaving the county, Agnes. I'm going back into that house.",
+    "why_it_works": "The physical action of locking the door combined with the reveal of a bold infiltration plan creates a strong 'how will she do it?' hook.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.88,
+      "max_speaker_run": 4,
+      "monologue_penalty": 1,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 2.58,
+    "final_score": 0.6467,
+    "rerank_position": 34,
+    "post_first_because": "",
+    "final_blended_score": 0.5727,
+    "rank": 34
+  },
+  {
+    "candidate_id": "ep41_c",
+    "promo_id": "ep41_c",
+    "segments": [
+      {
+        "episode": 41,
+        "start_event_id": 12,
+        "end_event_id": 14,
+        "start_s": 17.5,
+        "end_s": 26.0,
+        "start": "00:17.50",
+        "end": "00:26.00"
+      },
+      {
+        "episode": 41,
+        "start_event_id": 31,
+        "end_event_id": 31,
+        "start_s": 58.0,
+        "end_s": 60.5,
+        "start": "00:58.00",
+        "end": "01:00.50"
+      },
+      {
+        "episode": 41,
+        "start_event_id": 43,
+        "end_event_id": 48,
+        "start_s": 81.0,
+        "end_s": 93.5,
+        "start": "01:21.00",
+        "end": "01:33.50"
+      }
+    ],
+    "duration_s": 23.5,
+    "hook": "Visual shock of a prisoner being paraded in a high-society setting, creating an immediate 'what is happening?' reaction.",
+    "hook_quote": "Juliana, dressed in a coarse drab prison dress with a numbered identification badge, is marched forward by two armed constables holding her by the arms.",
+    "cliffhanger": "The attackers are revealed but not identified, and Juliana's reaction suggests a rescue or alliance rather than defeat.",
+    "cliffhanger_quote": "Silhouetted armed figures emerge through the smoke and rubble of the breached doorway. Juliana slowly turns her head, glancing back toward the light.",
+    "why_it_works": "It tells the full mini-arc of humiliation to rescue, ending on the moment of salvation without showing the face of the savior.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 2,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.26,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 1,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 2.0,
+      "first_3s_event_count": 6,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.1
+    },
+    "heuristic_score": 3.18,
+    "final_score": 0.6442,
+    "rerank_position": 35,
+    "post_first_because": "",
+    "final_blended_score": 0.5655,
+    "rank": 35
+  },
+  {
+    "candidate_id": "ep23_b",
+    "promo_id": "ep23_b",
+    "segments": [
+      {
+        "episode": 23,
+        "start_event_id": 57,
+        "end_event_id": 66,
+        "start_s": 112.2,
+        "end_s": 131.5,
+        "start": "01:52.20",
+        "end": "02:11.50"
+      }
+    ],
+    "duration_s": 19.3,
+    "hook": "Immediate auditory tension and physical threat; the sound of footsteps creates instant danger for the characters in the room.",
+    "hook_quote": "Sudden muffled thump and heavy footsteps echoing from the hallway outside the door!",
+    "cliffhanger": "The door opens, but the person entering is not shown, leaving the viewer in suspense about who has arrived and what will happen next.",
+    "cliffhanger_quote": "Close-up on the brass door lever as it slowly rotates downward, and the heavy door cracks open inward into the room\u2014cutting to an intense, heart-stopping cliffhanger.",
+    "why_it_works": "It captures the peak moment of danger where the protagonist is caught in the act, ending exactly as the threat enters the frame.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 5
+    },
+    "needs_context": true,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "borderline_duration"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 1,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.18,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 1,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.1
+    },
+    "heuristic_score": 3.18,
+    "final_score": 0.6318,
+    "rerank_position": 36,
+    "post_first_because": "",
+    "final_blended_score": 0.5514,
+    "rank": 36
+  },
+  {
+    "candidate_id": "ep03_b",
+    "promo_id": "ep03_b",
+    "segments": [
+      {
+        "episode": 3,
+        "start_event_id": 94,
+        "end_event_id": 111,
+        "start_s": 116.0,
+        "end_s": 140.3,
+        "start": "01:56.00",
+        "end": "02:20.30"
+      }
+    ],
+    "duration_s": 24.3,
+    "hook": "A mysterious action (reaching into pocket) in a high-tension setting, building anticipation for a reveal.",
+    "hook_quote": "Medium shot on The Bearded Stranger slipping his hand into his coat pocket.",
+    "cliffhanger": "The proposal is made, but Juliana's answer is withheld, leaving the viewer to wonder if she will accept this stranger.",
+    "cliffhanger_quote": "Lady Juliana... accept my hand.",
+    "why_it_works": "The 'stranger proposes' trope is a strong hook for drama apps; the cut before her reaction maximizes engagement.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.41,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.28
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.6285,
+    "rerank_position": 37,
+    "post_first_because": "",
+    "final_blended_score": 0.5436,
+    "rank": 37
+  },
+  {
+    "candidate_id": "ep12_c",
+    "promo_id": "ep12_c",
+    "segments": [
+      {
+        "episode": 12,
+        "start_event_id": 44,
+        "end_event_id": 53,
+        "start_s": 69.5,
+        "end_s": 87.21,
+        "start": "01:09.50",
+        "end": "01:27.21"
+      }
+    ],
+    "duration_s": 17.7,
+    "hook": "Emotional plea from the husband creates immediate sympathy and urgency.",
+    "hook_quote": "Juliana, no. Do not let them hurt you. I can handle the law.",
+    "cliffhanger": "The clip ends on Juliana's determined face, implying she has accepted the deadly challenge, but without showing her action.",
+    "cliffhanger_quote": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance.",
+    "why_it_works": "Captures the emotional core of the sacrifice and ends on a powerful visual of defiance, leaving the outcome of the briar challenge unknown.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "borderline_duration"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.65,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.3
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.6285,
+    "rerank_position": 38,
+    "post_first_because": "",
+    "final_blended_score": 0.5381,
+    "rank": 38
+  },
+  {
+    "candidate_id": "ep22_b",
+    "promo_id": "ep22_b",
+    "segments": [
+      {
+        "episode": 22,
+        "start_event_id": 66,
+        "end_event_id": 80,
+        "start_s": 108.5,
+        "end_s": 131.0,
+        "start": "01:48.50",
+        "end": "02:11.00"
+      }
+    ],
+    "duration_s": 22.5,
+    "hook": "The audio of distressing, labored breathing combined with the visual of a frail, silver-haired figure in a dark, gothic bedchamber creates an immediate sense of medical emergency and mystery.",
+    "hook_quote": "Labored, raspy, shallow breathing echoing in the quiet room.",
+    "cliffhanger": "The Duchess's sudden violent convulsion and terrified gaze, paired with Juliana's realization that this is not a fever, leaves the cause of the illness (poison?) and the Duchess's fate unresolved.",
+    "cliffhanger_quote": "Extreme close-up on the Dowager Duchess's terrified, wide eyes staring up as she chokes for air, the haunting realization of poison lingering as dramatic music hits an abrupt, suspenseful cliffhanger.",
+    "why_it_works": "It delivers the episode's core mystery\u2014the unnatural nature of the Duchess's illness\u2014ending on a visceral, high-stakes medical crisis that demands to know what is happening to her.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.67,
+      "max_speaker_run": 4,
+      "monologue_penalty": 1,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 1,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.27
+    },
+    "heuristic_score": 2.58,
+    "final_score": 0.6217,
+    "rerank_position": 39,
+    "post_first_because": "",
+    "final_blended_score": 0.5279,
+    "rank": 39
+  },
+  {
+    "candidate_id": "ep45_b",
+    "promo_id": "ep45_b",
+    "segments": [
+      {
+        "episode": 45,
+        "start_event_id": 56,
+        "end_event_id": 70,
+        "start_s": 86.5,
+        "end_s": 117.2,
+        "start": "01:26.50",
+        "end": "01:57.20"
+      }
+    ],
+    "duration_s": 30.7,
+    "hook": "A sudden, authoritative interruption shatters the triumphant moment, creating immediate conflict and suspense.",
+    "hook_quote": "No one will bow yet!",
+    "cliffhanger": "The legal invalidation of the marriage is a devastating blow that leaves the couple's future and status completely unresolved.",
+    "cliffhanger_quote": "You are not Alexander Ashburton's lawful wife.",
+    "why_it_works": "The classic 'triumph turned to tragedy' structure is highly engaging, ending on a direct threat to the protagonist's core identity and relationship.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 1,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.89,
+      "max_speaker_run": 4,
+      "monologue_penalty": 1,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 1,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.33,
+      "first_3s_event_count": 4,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.27
+    },
+    "heuristic_score": 2.58,
+    "final_score": 0.6217,
+    "rerank_position": 40,
+    "post_first_because": "",
+    "final_blended_score": 0.5225,
+    "rank": 40
+  },
+  {
+    "candidate_id": "ep12_b",
+    "promo_id": "ep12_b",
+    "segments": [
+      {
+        "episode": 12,
+        "start_event_id": 29,
+        "end_event_id": 43,
+        "start_s": 43.7,
+        "end_s": 69.2,
+        "start": "00:43.70",
+        "end": "01:09.20"
+      }
+    ],
+    "duration_s": 25.5,
+    "hook": "A direct, venomous threat from the antagonist that immediately raises the stakes.",
+    "hook_quote": "I want to see you crawl, sister.",
+    "cliffhanger": "The ultimate threat is delivered, leaving the viewer to wonder if Juliana will accept this impossible task.",
+    "cliffhanger_quote": "Fail, or refuse, and your husband hangs from the gallows.",
+    "why_it_works": "Focuses entirely on the sadistic ultimatum, creating intense emotional tension and a clear 'what happens next' question.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.88,
+      "max_speaker_run": 4,
+      "monologue_penalty": 1,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.47
+    },
+    "heuristic_score": 2.46,
+    "final_score": 0.6172,
+    "rerank_position": 41,
+    "post_first_because": "",
+    "final_blended_score": 0.5139,
+    "rank": 41
+  },
+  {
+    "candidate_id": "ep43_b",
+    "promo_id": "ep43_b",
+    "segments": [
+      {
+        "episode": 43,
+        "start_event_id": 24,
+        "end_event_id": 51,
+        "start_s": 26.1,
+        "end_s": 64.2,
+        "start": "00:26.10",
+        "end": "01:04.20"
+      }
+    ],
+    "duration_s": 38.1,
+    "hook": "A cold, authoritative command that contrasts with the previous chaos, signaling a shift to formal, damning evidence.",
+    "hook_quote": "Then let the Crown decide.",
+    "cliffhanger": "The official reads the name of the man currently screaming in denial, directly implicating him in treason just as the tension peaks.",
+    "cliffhanger_quote": "Rupert Ashburn.",
+    "why_it_works": "It focuses on the 'reveal' aspect, using the formal reading of documents to build suspense until the specific name of the antagonist is called out, confirming his guilt.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 1,
+      "events_per_10s": 7.35,
+      "max_speaker_run": 4,
+      "monologue_penalty": 1,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.39
+    },
+    "heuristic_score": 2.46,
+    "final_score": 0.6172,
+    "rerank_position": 42,
+    "post_first_because": "",
+    "final_blended_score": 0.5084,
+    "rank": 42
+  },
+  {
+    "candidate_id": "ep32_c",
+    "promo_id": "ep32_c",
+    "segments": [
+      {
+        "episode": 32,
+        "start_event_id": 85,
+        "end_event_id": 116,
+        "start_s": 112.8,
+        "end_s": 154.38,
+        "start": "01:52.80",
+        "end": "02:34.38"
+      }
+    ],
+    "duration_s": 41.6,
+    "hook": "A piercing psychological insight that attacks the antagonist's core insecurity, promising a devastating reveal of her true nature.",
+    "hook_quote": "JULIANA (Unrelenting): \"You have spent your whole life collecting things that make people bow...\"",
+    "cliffhanger": "The physical threat reaches its peak with the branding iron stopped millimeters from Juliana's eye, leaving the outcome of the torture completely unresolved.",
+    "cliffhanger_quote": "Extreme close-up of Juliana's wide, unblinking blue eye. The intense, fiery orange glow of the iron poker radiates inches from her cornea, holding on the heart-stopping cliffhanger as the frame cuts to black.",
+    "why_it_works": "It combines the emotional climax of the verbal battle with the physical climax of the threat, ending on a freeze-frame of maximum danger.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.69,
+      "max_speaker_run": 5,
+      "monologue_penalty": 2,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.33,
+      "first_3s_event_count": 1,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.44
+    },
+    "heuristic_score": 2.28,
+    "final_score": 0.6105,
+    "rerank_position": 43,
+    "post_first_because": "",
+    "final_blended_score": 0.4983,
+    "rank": 43
+  },
+  {
+    "candidate_id": "ep07_b",
+    "promo_id": "ep07_b",
+    "segments": [
+      {
+        "episode": 7,
+        "start_event_id": 8,
+        "end_event_id": 18,
+        "start_s": 22.0,
+        "end_s": 44.8,
+        "start": "00:22.00",
+        "end": "00:44.80"
+      }
+    ],
+    "duration_s": 22.8,
+    "hook": "A condescending question paired with a visual of a mud-covered woman vs. an elegant carriage creates immediate class conflict tension.",
+    "hook_quote": "This is where you live now?",
+    "cliffhanger": "Juliana's defiant retort sets up a verbal battle, cutting before the antagonist's next insult or physical reaction.",
+    "cliffhanger_quote": "I work with my hands. There is no shame in that.",
+    "why_it_works": "Establishes the 'underdog vs. elite' dynamic clearly and quickly, appealing to viewers who enjoy status reversal dramas.",
+    "sub_scores": {
+      "hook": 3,
+      "cliffhanger": 3,
+      "standalone": 5,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "low",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.82,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.45
+    },
+    "heuristic_score": 2.46,
+    "final_score": 0.6048,
+    "rerank_position": 44,
+    "post_first_because": "",
+    "final_blended_score": 0.4888,
+    "rank": 44
+  },
+  {
+    "candidate_id": "ep49_b",
+    "promo_id": "ep49_b",
+    "segments": [
+      {
+        "episode": 49,
+        "start_event_id": 45,
+        "end_event_id": 53,
+        "start_s": 104.2,
+        "end_s": 134.2,
+        "start": "01:44.20",
+        "end": "02:14.20"
+      }
+    ],
+    "duration_s": 30.0,
+    "hook": "The explicit mention of 'treason' and the threat of execution ('careful men still hang') creates immediate life-or-death tension.",
+    "hook_quote": "If I keep the hearing open, if I feed you every word spoken behind those doors, what happens to me when the Duke finds out a crowned priest conspired against him?",
+    "cliffhanger": "Catherine offers a seductive, ambiguous promise of reward or protection, but the clip cuts before Father Thomas accepts or rejects the deal, leaving the alliance's stability in question.",
+    "cliffhanger_quote": "A grateful Duchess collects debts differently than a desperate one.",
+    "why_it_works": "It juxtaposes the mortal danger of treason with seductive manipulation, creating a compelling 'will they survive?' hook.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 3.0,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.33,
+      "first_3s_event_count": 1,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.56
+    },
+    "heuristic_score": 2.38,
+    "final_score": 0.6017,
+    "rerank_position": 45,
+    "post_first_because": "",
+    "final_blended_score": 0.4812,
+    "rank": 45
+  },
+  {
+    "candidate_id": "ep19_a",
+    "promo_id": "ep19_a",
+    "segments": [
+      {
+        "episode": 19,
+        "start_event_id": 25,
+        "end_event_id": 46,
+        "start_s": 41.5,
+        "end_s": 83.7,
+        "start": "00:41.50",
+        "end": "01:23.70"
+      }
+    ],
+    "duration_s": 42.2,
+    "hook": "A mysterious, scarred man bows to a stoic figure in a foggy forest, immediately establishing a secret, high-stakes meeting between a noble and his operative.",
+    "hook_quote": "Your Grace.",
+    "cliffhanger": "Alexander reveals he is alive despite everyone thinking he is dead, but the specific plan for his return or the immediate next step in his revenge is left hanging.",
+    "cliffhanger_quote": "Then let them believe it a little longer.",
+    "why_it_works": "It combines the mystery of a secret meeting with the high-stakes revelation of a usurpation and a prisoner, ending on a cold, calculating threat that promises future action.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.21,
+      "max_speaker_run": 6,
+      "monologue_penalty": 3,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 1.86,
+    "final_score": 0.5947,
+    "rerank_position": 46,
+    "post_first_because": "",
+    "final_blended_score": 0.4708,
+    "rank": 46
+  },
+  {
+    "candidate_id": "ep36_c",
+    "promo_id": "ep36_c",
+    "segments": [
+      {
+        "episode": 36,
+        "start_event_id": 95,
+        "end_event_id": 116,
+        "start_s": 156.8,
+        "end_s": 196.8,
+        "start": "02:36.80",
+        "end": "03:16.80"
+      }
+    ],
+    "duration_s": 40.0,
+    "hook": "The protagonist's voice is cold and menacing, setting up a confrontation with the villains' celebration.",
+    "hook_quote": "They are marrying in two days...",
+    "cliffhanger": "A powerful, threatening declaration that promises retribution. It cuts on the promise of violence/return, leaving the viewer wanting to see the 'dead' man arrive.",
+    "cliffhanger_quote": "...their dead Duke is coming home.",
+    "why_it_works": "It serves as a strong 'villain reveal' or 'hero return' hook, promising action and justice.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 5,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.5,
+      "max_speaker_run": 7,
+      "monologue_penalty": 4,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.33,
+      "first_3s_event_count": 1,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.45
+    },
+    "heuristic_score": 1.68,
+    "final_score": 0.588,
+    "rerank_position": 47,
+    "post_first_because": "",
+    "final_blended_score": 0.4607,
+    "rank": 47
+  },
+  {
+    "candidate_id": "ep44_c",
+    "promo_id": "ep44_c",
+    "segments": [
+      {
+        "episode": 44,
+        "start_event_id": 37,
+        "end_event_id": 52,
+        "start_s": 51.1,
+        "end_s": 70.4,
+        "start": "00:51.10",
+        "end": "01:10.40"
+      }
+    ],
+    "duration_s": 19.3,
+    "hook": "A raw, emotional outburst that grabs attention through sheer desperation and vulnerability.",
+    "hook_quote": "But I loved you!",
+    "cliffhanger": "A gasp of realization that cuts off before the viewer sees who 'her' is, creating a massive curiosity gap about the rival.",
+    "cliffhanger_quote": "Her?!",
+    "why_it_works": "It escalates the emotional rejection into a shocking visual reveal of a chained rival, ending on a cliffhanger that demands the next episode.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "borderline_duration"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 8.29,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.38
+    },
+    "heuristic_score": 2.88,
+    "final_score": 0.583,
+    "rerank_position": 48,
+    "post_first_because": "",
+    "final_blended_score": 0.4517,
+    "rank": 48
+  },
+  {
+    "candidate_id": "ep04_b",
+    "promo_id": "ep04_b",
+    "segments": [
+      {
+        "episode": 4,
+        "start_event_id": 39,
+        "end_event_id": 45,
+        "start_s": 53.6,
+        "end_s": 65.5,
+        "start": "00:53.60",
+        "end": "01:05.50"
+      },
+      {
+        "episode": 4,
+        "start_event_id": 96,
+        "end_event_id": 98,
+        "start_s": 127.5,
+        "end_s": 134.5,
+        "start": "02:07.50",
+        "end": "02:14.50"
+      }
+    ],
+    "duration_s": 18.9,
+    "hook": "Juliana fiercely rejects the proposal, asserting her dignity and refusing to be seen as a charity case, which creates immediate tension with the suitor.",
+    "hook_quote": "If this is pity, take back your ring.",
+    "cliffhanger": "The matriarch shouts a final, irreversible declaration of rejection, leaving the viewer to wonder how Juliana will react to being cut off from her family.",
+    "cliffhanger_quote": "You are disowned!",
+    "why_it_works": "It captures the core conflict: the protagonist's pride vs. the family's cruelty, ending on a shocking, high-stakes threat.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.29,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.6
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.5785,
+    "rerank_position": 49,
+    "post_first_because": "",
+    "final_blended_score": 0.4431,
+    "rank": 49
+  },
+  {
+    "candidate_id": "ep30_b",
+    "promo_id": "ep30_b",
+    "segments": [
+      {
+        "episode": 30,
+        "start_event_id": 40,
+        "end_event_id": 46,
+        "start_s": 83.2,
+        "end_s": 93.4,
+        "start": "01:23.20",
+        "end": "01:33.40"
+      },
+      {
+        "episode": 30,
+        "start_event_id": 62,
+        "end_event_id": 62,
+        "start_s": 125.5,
+        "end_s": 133.0,
+        "start": "02:05.50",
+        "end": "02:13.00"
+      }
+    ],
+    "duration_s": 17.7,
+    "hook": "A direct question that sets up a logical trap, engaging the viewer's curiosity about the answer.",
+    "hook_quote": "And if she claims she is a healer?",
+    "cliffhanger": "Catherine's exultant declaration of Juliana's death sentence creates immediate emotional outrage and urgency.",
+    "cliffhanger_quote": "She will hang. A perfect solution. The town will cheer as the witch's disgraced daughter faces the noose.",
+    "why_it_works": "Focuses on the cold, calculated nature of the betrayal and the cruel satisfaction of the antagonists.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.52,
+      "max_speaker_run": 1,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 3,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.33,
+      "first_3s_event_count": 4,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.62
+    },
+    "heuristic_score": 2.46,
+    "final_score": 0.5672,
+    "rerank_position": 50,
+    "post_first_because": "",
+    "final_blended_score": 0.4298,
+    "rank": 50
+  },
+  {
+    "candidate_id": "ep46_b",
+    "promo_id": "ep46_b",
+    "segments": [
+      {
+        "episode": 46,
+        "start_event_id": 29,
+        "end_event_id": 33,
+        "start_s": 52.2,
+        "end_s": 65.5,
+        "start": "00:52.20",
+        "end": "01:05.50"
+      },
+      {
+        "episode": 46,
+        "start_event_id": 35,
+        "end_event_id": 35,
+        "start_s": 66.8,
+        "end_s": 70.5,
+        "start": "01:06.80",
+        "end": "01:10.50"
+      }
+    ],
+    "duration_s": 17.0,
+    "hook": "A shocking revelation that the Duke was legally dead makes the marriage impossible, creating instant intrigue.",
+    "hook_quote": "And no clerk in London ever entered your name in the Royal register, because as far as the Crown knew, Alexander Ashburton was already dead.",
+    "cliffhanger": "The priest's cold, dismissive dismissal of their love leaves the couple's fate hanging in the balance, with no immediate resolution to the legal impasse.",
+    "cliffhanger_quote": "Love doesn't make a Duchess, girl. Paper does.",
+    "why_it_works": "The 'dead man' reveal is a strong hook, and the priest's cruel line provides a sharp, unresolved emotional beat.",
+    "sub_scores": {
+      "hook": 5,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 3.53,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.67
+    },
+    "heuristic_score": 2.58,
+    "final_score": 0.5592,
+    "rerank_position": 51,
+    "post_first_because": "",
+    "final_blended_score": 0.4187,
+    "rank": 51
+  },
+  {
+    "candidate_id": "ep10_c",
+    "promo_id": "ep10_c",
+    "segments": [
+      {
+        "episode": 10,
+        "start_event_id": 47,
+        "end_event_id": 58,
+        "start_s": 63.9,
+        "end_s": 85.9,
+        "start": "01:03.90",
+        "end": "01:25.90"
+      }
+    ],
+    "duration_s": 22.0,
+    "hook": "A vulnerable, breathless question that signals a shift from physical action to emotional intensity, promising a romantic payoff.",
+    "hook_quote": "Why do you look at me like that?",
+    "cliffhanger": "The clip ends on a raw, emotional confession, leaving the viewer to wonder how Juliana will react to such a deep vulnerability.",
+    "cliffhanger_quote": "Your touch is the only medicine that has ever eased my pain.",
+    "why_it_works": "It captures the peak of romantic tension and emotional vulnerability, offering a 'slow burn' payoff that appeals to drama fans.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 4
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 5.45,
+      "max_speaker_run": 3,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 1.0,
+      "first_3s_event_count": 3,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.5
+    },
+    "heuristic_score": 2.88,
+    "final_score": 0.558,
+    "rerank_position": 52,
+    "post_first_because": "",
+    "final_blended_score": 0.4124,
+    "rank": 52
+  },
+  {
+    "candidate_id": "ep18_c",
+    "promo_id": "ep18_c",
+    "segments": [
+      {
+        "episode": 18,
+        "start_event_id": 70,
+        "end_event_id": 80,
+        "start_s": 145.8,
+        "end_s": 192.0,
+        "start": "02:25.80",
+        "end": "03:12.00"
+      }
+    ],
+    "duration_s": 46.2,
+    "hook": "A direct question about a violent crime (arson) immediately raises the stakes and implies a villain.",
+    "hook_quote": "Why would anyone do this?",
+    "cliffhanger": "The specific plan for revenge is not stated, leaving the viewer to wonder how he will retaliate.",
+    "cliffhanger_quote": "Dramatic hold on Alexander's grim, unyielding profile as he stares into the inferno with unshakeable resolve, the swelling score echoing a vow of vengeance into the final cut to black.",
+    "why_it_works": "The shift from victimhood to a cold, lethal vow of vengeance is a strong character-driven hook for drama fans.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 4,
+      "standalone": 4,
+      "pace": 3
+    },
+    "needs_context": false,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 2.38,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 1,
+      "first_3s_density": 0.33,
+      "first_3s_event_count": 1,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.55
+    },
+    "heuristic_score": 2.38,
+    "final_score": 0.5142,
+    "rerank_position": 53,
+    "post_first_because": "",
+    "final_blended_score": 0.3763,
+    "rank": 53
+  },
+  {
+    "candidate_id": "ep19_b",
+    "promo_id": "ep19_b",
+    "segments": [
+      {
+        "episode": 19,
+        "start_event_id": 37,
+        "end_event_id": 49,
+        "start_s": 70.6,
+        "end_s": 88.9,
+        "start": "01:10.60",
+        "end": "01:28.90"
+      }
+    ],
+    "duration_s": 18.3,
+    "hook": "A close-up of a hand clenching into a trembling fist signals imminent violence or extreme rage, paired with the alarming news that a woman is isolated and watched.",
+    "hook_quote": "There are almost no loyal servants left around her.",
+    "cliffhanger": "The protagonist makes a definitive vow of vengeance, but the method and timing of this reclamation are unknown, leaving the audience eager to see the payoff.",
+    "cliffhanger_quote": "Then Ashburg will remember who it belongs to.",
+    "why_it_works": "It focuses entirely on the emotional peak of the episode: the realization of betrayal and the decision to fight back, ending on a powerful, cinematic vow.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 3,
+      "pace": 5
+    },
+    "needs_context": true,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 4,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 7.1,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 1.33,
+      "first_3s_event_count": 4,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.54
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.3535,
+    "rerank_position": 54,
+    "post_first_because": "",
+    "final_blended_score": 0.2584,
+    "rank": 54
+  },
+  {
+    "candidate_id": "ep07_c",
+    "promo_id": "ep07_c",
+    "segments": [
+      {
+        "episode": 7,
+        "start_event_id": 32,
+        "end_event_id": 40,
+        "start_s": 69.5,
+        "end_s": 88.0,
+        "start": "01:09.50",
+        "end": "01:28.00"
+      }
+    ],
+    "duration_s": 18.5,
+    "hook": "A mysterious, imposing figure emerging from the fog creates instant intrigue and visual drama.",
+    "hook_quote": "A towering, shadowed figure walks steadily forward through the mist.",
+    "cliffhanger": "The threat arrives, and the antagonist's fear is shown, but the specific reason for his terror (the man's identity/power) is left to the viewer's imagination.",
+    "cliffhanger_quote": "Gerald freezes, his arrogant bravado instantly vanishing as cold dread overtakes his face.",
+    "why_it_works": "Focuses on the 'cool factor' of the male lead's entrance and the immediate intimidation factor, a key trope in this genre.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 4,
+      "standalone": 3,
+      "pace": 4
+    },
+    "needs_context": true,
+    "spoiler_risk": "low",
+    "visual_risk": "med",
+    "confidence": 4,
+    "flags": [
+      "borderline_duration",
+      "possible_resolution_after_clip"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 4.86,
+      "max_speaker_run": 0,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 0,
+      "unintroduced_speakers": 0,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.0
+    },
+    "heuristic_score": 2.7,
+    "final_score": 0.3512,
+    "rerank_position": 55,
+    "post_first_because": "",
+    "final_blended_score": 0.2513,
+    "rank": 55
+  },
+  {
+    "candidate_id": "ep09_e",
+    "promo_id": "ep09_e",
+    "segments": [
+      {
+        "episode": 9,
+        "start_event_id": 77,
+        "end_event_id": 88,
+        "start_s": 97.2,
+        "end_s": 115.5,
+        "start": "01:37.20",
+        "end": "01:55.50"
+      }
+    ],
+    "duration_s": 18.3,
+    "hook": "Extreme close-up on fear/dread is a strong visual hook for drama.",
+    "hook_quote": "CAMERA: Extreme close-up of The Former Groom's eyes widening with urgent dread.",
+    "cliffhanger": "The Nobleman is left in a state of paralyzed dread, with the threat unresolved and his next move unknown.",
+    "cliffhanger_quote": "CAMERA: Extreme close-up macro shot of the Blond Nobleman's eye, the flickering fireplace flames dancing across his widening iris as dark dread paralyzes him, holding until the screen cuts to black.",
+    "why_it_works": "Pure atmospheric tension and a strong visual ending that implies a major plot shift.",
+    "sub_scores": {
+      "hook": 4,
+      "cliffhanger": 5,
+      "standalone": 3,
+      "pace": 4
+    },
+    "needs_context": true,
+    "spoiler_risk": "med",
+    "visual_risk": "low",
+    "confidence": 3,
+    "flags": [
+      "borderline_duration"
+    ],
+    "hook_verified": true,
+    "cliffhanger_verified": true,
+    "heuristics": {
+      "action_verbs_first_3s": 0,
+      "caps_actions_first_3s": 0,
+      "events_per_10s": 6.56,
+      "max_speaker_run": 2,
+      "monologue_penalty": 0,
+      "cliffhanger_pattern_match": false,
+      "n_speakers": 2,
+      "unintroduced_speakers": 2,
+      "first_3s_density": 0.67,
+      "first_3s_event_count": 2,
+      "unfinished_beat": false,
+      "dialogue_ratio": 0.42
+    },
+    "heuristic_score": 2.76,
+    "final_score": 0.3285,
+    "rerank_position": 56,
+    "post_first_because": "",
+    "final_blended_score": 0.2299,
+    "rank": 56
+  }
+]

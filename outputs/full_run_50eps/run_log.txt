@@ -1,0 +1,67 @@
+[13:56:38] Promo Finder starting — run_id=full_run_50eps
+[13:56:38] Input folder: data/show
+[13:56:38] Config: provider=groq
+[13:56:38] Phase 1: parsed 50 episodes, 3671 events
+[13:56:38] Phase 2: Stage 1 extracting episode 1 (1/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 2 (2/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 3 (3/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 4 (4/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 5 (5/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 6 (6/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 7 (7/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 8 (8/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 9 (9/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 10 (10/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 11 (11/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 12 (12/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 13 (13/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 14 (14/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 15 (15/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 16 (16/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 17 (17/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 18 (18/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 19 (19/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 20 (20/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 21 (21/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 22 (22/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 23 (23/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 24 (24/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 25 (25/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 26 (26/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 27 (27/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 28 (28/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 29 (29/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 30 (30/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 31 (31/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 32 (32/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 33 (33/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 34 (34/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 35 (35/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 36 (36/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 37 (37/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 38 (38/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 39 (39/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 40 (40/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 41 (41/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 42 (42/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 43 (43/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 44 (44/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 45 (45/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 46 (46/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 47 (47/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 48 (48/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 49 (49/50)... [Loaded from disk cache]
+[13:56:38] Phase 2: Stage 1 extracting episode 50 (50/50)... [Loaded from disk cache]
+[13:56:38] Phase 3: Stage 1 returned 152 raw candidates in 0.0s
+[13:56:38] Phase 4: Validating candidates, durations & boundaries...
+[13:56:38] Phase 4: valid first pass=56, repaired=0, dropped=96
+[13:56:38] Phase 5: Stage 2 analyzing global deduplication, plot spoilers & cross-episode combos...
+[13:56:38] [LLM] Calling Groq AI (qwen/qwen3.8-27b) for stage2...
+[13:56:38] Phase 5 complete: Stage 2 global analysis finished.
+[13:56:38] Phase 6: removed 0 duplicates, accepted 0 cross-episode combos
+[13:56:38] Phase 7: Ranking & scoring 56 candidates (MMR diversity & comparative rerank)...
+[13:56:42] [LLM] Calling Groq AI (qwen/qwen3.8-27b) for rerank...
+[13:56:42] Phase 7 complete: ranked 56 candidates
+[13:56:42] Phase 8: Generating output reports, JSON, and CSV files...
+[13:56:42] Phase 8: outputs written to outputs/full_run_50eps
+[13:56:42] Pipeline complete! Completed in 4.2s
