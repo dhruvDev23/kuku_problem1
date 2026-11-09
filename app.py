@@ -222,6 +222,23 @@ def main():
         return
 
     st.success(f"Ranked {result['ranked_candidates']} promos across all episodes.")
+    
+    col_dl1, col_dl2 = st.columns([1, 1])
+    with col_dl1:
+        st.download_button(
+            "📥 Download Promos CSV",
+            data=(Path("raw_outputs/promos.csv").read_text() if Path("raw_outputs/promos.csv").exists() else ""),
+            file_name="promos.csv",
+            mime="text/csv",
+        )
+    with col_dl2:
+        st.download_button(
+            "📥 Download Promos JSON",
+            data=(Path("raw_outputs/promos.json").read_text() if Path("raw_outputs/promos.json").exists() else ""),
+            file_name="promos.json",
+            mime="application/json",
+        )
+
     rows = []
     for candidate in result["ranked"]:
         segs = candidate.get("segments", [])
@@ -247,7 +264,9 @@ def main():
             "why_it_works": candidate.get("why_it_works", ""),
             "post_order_rationale": candidate.get("post_first_because") or candidate.get("why_it_works", ""),
         })
-    st.dataframe(rows, use_container_width=True)
+    
+    st.caption(f"Displaying all {len(rows)} ranked promos. Scroll vertically to inspect any row, click column headers to sort.")
+    st.dataframe(rows, use_container_width=True, height=520)
 
     st.subheader("Human Editorial Review")
     col_rev1, col_rev2 = st.columns([2, 1])
